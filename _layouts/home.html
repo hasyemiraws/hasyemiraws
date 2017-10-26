@@ -1,0 +1,196 @@
+---
+layout: default
+title: "Home - hasyemiraws"
+---
+
+<section class="featured-cover">
+    <div class="featured">                             
+      <div class="hero">          
+        <div class="hero-item">
+          <div class="image hero-image hero__home">
+              <div class="hero-label">                  
+              <span class="small-title">A Journal of a</span>
+              <h1>
+                High Functional Introvert                  
+              </h1>           
+            </div>
+          </div>      
+        </div>          
+      </div>
+    </div>
+</section>
+
+<section class="post--section">
+  <div class="container">
+    
+    <div id="dev__section">
+      <div class="top-section">
+        <a href="#"><h2 class="title-section">Recent Stories</h2></a>
+        <!-- <a href="#" class="section-read-more">View All </a> -->
+      </div>                
+       {% for post in site.posts limit:10 %}    
+          {% if forloop.index <= 1 %}
+            {% if forloop.index == 1 %}
+              <div class="article-grid">
+            {% endif %}
+
+                <div class="article-item">                  
+                  <a href="{{ post.url }}">
+                    <img class="article-image" src="{{ post.featured_image }}">            
+                  </a>
+                    <div class="article-text">                       
+                        <h3 class="article-title">
+                            <a href="{{ post.url }}">
+                              {{ post.title }}
+                            </a>
+                        </h3>
+
+                        {% if post.categories %}
+                          {% assign categories = post.categories %}
+                        {% else %}
+                          {% assign categories = page.categories %}
+                        {% endif %}
+                        {% for category in categories %}
+                        <span class="article-category-label">
+                          <!-- <a href="/categories/#{{category|slugize}}"> -->
+                            {{category}}
+                          <!-- </a> -->
+                        </span>
+                        {% unless forloop.last %}&nbsp;{% endunless %}
+                        {% endfor %}
+
+                        <div class="article-excerpt">
+                            {% if post.excerpt %}
+                                {{ post.excerpt }}
+                            {% endif %}
+                        </div>                          
+                    </div>          
+                </div>      
+
+                {% if forloop.index >= 1 %}
+              </div>  
+            {% endif %}
+
+          {% elsif forloop.index <= 4 or forloop.index >= 8 %}
+            {% if forloop.index == 2 or forloop.index == 8 %}
+              <div class="article-grid">
+            {% endif %}
+            <div class="article-item" data-test="{{ forloop.index }}">                      
+                <a href="{{ post.url }}">
+                  <img class="article-image" src="{{ post.featured_image }}">
+                </a>
+                  <div class="article-text">                        
+                        <h3 class="article-title">
+                            <a href="{{ post.url }}">
+                              {{ post.title }}
+                            </a>
+                        </h3>
+
+                        {% if post.categories %}
+                          {% assign categories = post.categories %}
+                        {% else %}
+                          {% assign categories = page.categories %}
+                        {% endif %}
+                        {% for category in categories %}
+                        <span class="article-category-label">
+                          <!-- <a href="/categories/#{{category|slugize}}"> -->
+                            {{category}}
+                          <!-- </a> -->
+                        </span>
+                        {% unless forloop.last %}&nbsp;{% endunless %}
+                        {% endfor %}
+
+                        <div class="article-excerpt">
+                            {% if post.excerpt %}
+                                {{ post.excerpt }}
+                            {% endif %}
+                        </div>                            
+                    </div>           
+              </div>
+
+              {% if forloop.index >= 10 or forloop.index >= 4 %}
+                {% if forloop.index >= 8 and forloop.index <= 10 %}                  
+                {% else %}
+                  </div>
+                {% endif %}
+              {% endif %}
+          {% elsif forloop.index <= 5 %}
+            <div class="article-grid">    
+                <div class="article-item article-item-two-column">                      
+                    <img class="article-image" src="{{ post.featured_image }}">
+                    <div class="article-text">                          
+                        <h3 class="article-title">
+                            <a href="{{ post.url }}">
+                              {{ post.title }}
+                            </a>
+                        </h3>
+
+                        {% if post.categories %}
+                        {% assign categories = post.categories %}
+                      {% else %}
+                        {% assign categories = page.categories %}
+                      {% endif %}
+                      {% for category in categories %}
+                      <span class="article-category-label">
+                        <!-- <a href="/categories/#{{category|slugize}}"> -->
+                          {{category}}
+                        <!-- </a> -->
+                      </span>
+                      {% unless forloop.last %}&nbsp;{% endunless %}
+                      {% endfor %}
+
+                        <div class="article-excerpt">
+                            {% if post.excerpt %}
+                                {{ post.excerpt }}
+                            {% endif %}
+                        </div>                           
+                    </div>            
+                </div>                    
+            </div>
+            {% else %}
+              {% if forloop.index == 6 %}
+                <div class="article-grid">
+              {% endif %}
+              <div class="article-item" data-test="test">
+                  <a href="{{ post.url }}">
+                    <img class="article-image" src="{{ post.featured_image }}">
+                  </a>
+                    <div class="article-text">                        
+                          <h3 class="article-title">
+                              <a href="{{ post.url }}">
+                                {{ post.title }}
+                              </a>
+                          </h3>
+
+                          {% if post.categories %}
+                            {% assign categories = post.categories %}
+                          {% else %}
+                            {% assign categories = page.categories %}
+                          {% endif %}
+                          {% for category in categories %}
+                          <span class="article-category-label">
+                            <!-- <a href="/categories/#{{category|slugize}}"> -->
+                              {{category}}
+                            <!-- </a> -->
+                          </span>
+                          {% unless forloop.last %}&nbsp;{% endunless %}
+                          {% endfor %}
+
+                          <div class="article-excerpt">
+                            {% if post.excerpt %}
+                                {{ post.excerpt }}
+                            {% endif %}
+                        </div>                          
+                      </div>           
+                </div>
+
+                {% if forloop.index >= 7 %}
+                  </div>  
+                {% endif %}
+            {% endif %}
+                        
+        {% endfor %}
+      
+    </div>        
+  </div>
+</section>
