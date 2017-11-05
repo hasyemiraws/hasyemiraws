@@ -17,9 +17,28 @@
 title: hasyemiraws
 email: hi@hasyemiraws.com
 description:
-  High Functional Introvert
+  High Functional Introvert. Full Time Learner. Part time stalker. Front end enthusiast.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "hasyemiraws.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://hasyemiraws.com" # the base hostname & protocol for your site, e.g. http://example.com
+author: "Hasyemi Rafsanjani Asyari"
+tagline: High Functional Introvert.
+
+twitter:
+  username: hasyemiraws
+
+logo: "/assets/images/logo-white.png"
+
+social:
+  name: Hasyemi Rafsanjani Asyari
+  links:
+    - https://twitter.com/hasyemiraws
+    - https://www.facebook.com/hasyemi.rafsanjani
+    - https://instagram.com/hasyemiraws
+    - https://codepen.io/hasyemiraws
+    - https://www.linkedin.com/in/hasyemirafsanjani
+    - https://plus.google.com/+hasyemirafsanjaniasyari
+    - https://github.com/hasyemiraws
+    - https://www.youtube.com/channel/UCzvyjUsomu2sdTbuBJHA9ag
 
 # social url
 twitter_url: https://twitter.com/hasyemiraws
@@ -34,11 +53,15 @@ permalink: /:title/
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
+  - jekyll-feed  
+  - jekyll-seo-tag  
+  - jekyll-sitemap
+
 sass:
   style: compressed
 
 google_analytics: UA-108167393-1
+google_site_verification: UA-108167393-1
 
 disqus:
   shortname: hasyemiraws

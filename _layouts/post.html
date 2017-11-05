@@ -56,6 +56,112 @@ layout: default
         {% include disqus_comments.html %}
       {% endif %}
     </article>
+    <section class="article-related">
+      <h2 class="title-section">Related Post</h2>
+      <div class="article-grid">
+        {% assign RELATED_POSTS_THRESHOLD = 3 %}      
+        {% assign related_post_count = 0 %}
+        {% for post in site.related_posts %}
+          {% if related_post_count == RELATED_POSTS_THRESHOLD %}
+            {% break %}
+          {% endif %}
+          {% for cat in post.categories %}
+            {% if page.categories contains cat %}
+              <div class="article-item" data-test="{{ forloop.index }}">                      
+                  <a href="{{ post.url }}">
+                    <img class="article-image" src="{{ post.featured_image }}">
+                  </a>
+                    <div class="article-text">                        
+                          <h3 class="article-title">
+                              <a href="{{ post.url }}">
+                                {{ post.title }}
+                              </a>
+                          </h3>
+
+                          {% if post.categories %}
+                            {% assign categories = post.categories %}
+                          {% else %}
+                            {% assign categories = page.categories %}
+                          {% endif %}
+                          {% for category in categories %}
+                          <span class="article-category-label">
+                            <!-- <a href="/categories/#{{category|slugize}}"> -->
+                              {{category}}
+                            <!-- </a> -->
+                          </span>
+                          {% unless forloop.last %}&nbsp;{% endunless %}
+                          {% endfor %}
+
+                          <div class="article-excerpt">
+                              <p>
+                                {% if post.description %}
+                                    {{ post.description }}
+                                {% endif %}
+                              </p>
+                          </div>                            
+                      </div>           
+                </div>
+              {% assign related_post_count = related_post_count | plus: 1 %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+
+        {% assign posts_left = RELATED_POSTS_THRESHOLD | minus: related_post_count %}
+        {% unless posts_left == 0 %}
+          {% for post in site.related_posts %}
+            {% if posts_left == 0 %}
+              {% break %}
+            {% endif %}
+
+            {% assign already_related = false %}
+            {% for cat in post.categories %}
+              {% if page.categories contains cat %}
+                {% assign already_related = true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% unless already_related %}
+              {% assign posts_left = posts_left | minus: 1 %}
+              <div class="article-item" data-test="{{ forloop.index }}">                      
+                  <a href="{{ post.url }}">
+                    <img class="article-image" src="{{ post.featured_image }}">
+                  </a>
+                    <div class="article-text">                        
+                          <h3 class="article-title">
+                              <a href="{{ post.url }}">
+                                {{ post.title }}
+                              </a>
+                          </h3>
+
+                          {% if post.categories %}
+                            {% assign categories = post.categories %}
+                          {% else %}
+                            {% assign categories = page.categories %}
+                          {% endif %}
+                          {% for category in categories %}
+                          <span class="article-category-label">
+                            <!-- <a href="/categories/#{{category|slugize}}"> -->
+                              {{category}}
+                            <!-- </a> -->
+                          </span>
+                          {% unless forloop.last %}&nbsp;{% endunless %}
+                          {% endfor %}
+
+                          <div class="article-excerpt">
+                              <p>
+                                {% if post.description %}
+                                    {{ post.description }}
+                                {% endif %}
+                              </p>
+                          </div>                            
+                      </div>           
+                </div>
+            {% endunless %}
+          {% endfor %}
+        {% endunless %}      
+      </div>
+    </section>
   </div>
 </section>
 </div>

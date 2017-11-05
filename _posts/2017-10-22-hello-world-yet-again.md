@@ -4,18 +4,22 @@ title:  "Hello World! Yet Again"
 comments: true
 date:   2017-10-22 18:00:00 +0800
 categories: life
-author: Hasyemi Rafsanjani
+description: I think most dev person or someone who learn programming language will be familiar with this expression. Every time you learn new language, you'll probably starting out with a very plain and simple yet useless app just to echo out a word "Hello World". Well that's good, at least it means you're starting out to learn something.
+author: Hasyemi Rafsanjani Asyari
 featured_image: /assets/images/post/hello-world.jpeg
+image: /assets/images/post/hello-world.jpeg
 excerpt_separator: <!--more-->
 ---
 
+<h6>Listen to this post:</h6>
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/349094474&amp;color=%23000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe><br/>
 I think most dev person or someone who learn programming language will be familiar with this expression. Every time you learn new language, you'll probably starting out with a very plain and simple yet useless app just to echo out a word "Hello World". Well that's good, at least it means you're starting out to learn something.<!--more-->
 
 In my case tho, not really. Well, partially. I'll tell you why in a moment.
 
 So this post will marked as my first post on my new website. Sorry let me get back with that, this is **_my first ever post posted on my new personal website with my own domain name_**. Which is quite embarrassing, because I've been learn and into web development since high school, and since then been wanting to have my own personal website. That's why i said in my case this Hello World doesn't mean starting out to learn. I've been learn enough!
 
-All of my previous website was just either blogspot or WordPress, and is never well maintained regularly. Even with this website, it takes me about 10 months after I purchased this domain for me to really work on it and finish it. (Well actually, is not really done yet).
+All of my previous website was just either blogspot or WordPress, and is never well maintained regularly. Even with this website, it took me about 10 months after I purchased this domain for me to really work on it and finish it. (Well actually, is not really done yet).
 
 The reason? **Procrastinate**, **Over thinking** and not having enough time.
 

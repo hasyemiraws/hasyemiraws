@@ -25,7 +25,7 @@ title: "Home - hasyemiraws"
     
     <div id="dev__section">
       <div class="top-section">
-        <a href="#"><h2 class="title-section">Recent Stories</h2></a>
+        <a href="#"><h2 class="title-section skew">Recent Stories</h2></a>
         <!-- <a href="#" class="section-read-more">View All </a> -->
       </div>                
        {% for post in site.posts limit:10 %}    
@@ -60,9 +60,11 @@ title: "Home - hasyemiraws"
                         {% endfor %}
 
                         <div class="article-excerpt">
-                            {% if post.excerpt %}
-                                {{ post.excerpt }}
+                          <p>
+                            {% if post.description %}
+                                {{ post.description }}
                             {% endif %}
+                          </p>
                         </div>                          
                     </div>          
                 </div>      
@@ -101,9 +103,11 @@ title: "Home - hasyemiraws"
                         {% endfor %}
 
                         <div class="article-excerpt">
-                            {% if post.excerpt %}
-                                {{ post.excerpt }}
-                            {% endif %}
+                            <p>
+                              {% if post.description %}
+                                  {{ post.description }}
+                              {% endif %}
+                            </p>
                         </div>                            
                     </div>           
               </div>
@@ -140,9 +144,11 @@ title: "Home - hasyemiraws"
                       {% endfor %}
 
                         <div class="article-excerpt">
-                            {% if post.excerpt %}
-                                {{ post.excerpt }}
-                            {% endif %}
+                            <p>
+                              {% if post.description %}
+                                  {{ post.description }}
+                              {% endif %}
+                            </p>
                         </div>                           
                     </div>            
                 </div>                    
@@ -177,9 +183,11 @@ title: "Home - hasyemiraws"
                           {% endfor %}
 
                           <div class="article-excerpt">
-                            {% if post.excerpt %}
-                                {{ post.excerpt }}
-                            {% endif %}
+                            <p>
+                              {% if post.description %}
+                                  {{ post.description }}
+                              {% endif %}
+                            </p>
                         </div>                          
                       </div>           
                 </div>

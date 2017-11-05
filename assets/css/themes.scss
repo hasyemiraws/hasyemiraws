@@ -2,12 +2,17 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
 	background: #f1f1f1;
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 
 	&__header {
 		width: 90%;
@@ -176,7 +181,7 @@ a {
 	    grid-gap: 50px;	   
 	    align-items: center; 
 	    width: 90%;
-        max-width: 1480px;	    
+        max-width: 1000px;	    
 	    top: 50%;
 	    left: 50%;
 	    transform: translate(-50%, -50%);		
@@ -350,7 +355,14 @@ a {
     text-align: left;
     margin-bottom: 0;
     font-family: 'Montserrat', sans-serif;
-    color: #444847;
+    color: #8a9492;
+
+    &.skew {
+    	font-size: 5em;
+    	position: absolute;
+    	top: -15px;
+    	left: -30px;
+    }
 }
 
 .article {
@@ -359,7 +371,7 @@ a {
 	    display: grid;
 	    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
 	    margin-bottom: 20px;
-	    grid-column-gap: 1.5em;
+	    grid-column-gap: 1.1em;
 	    grid-row-gap: 20px;
 	}
 
@@ -392,7 +404,8 @@ a {
 	&-image {
 	    max-width: 100%;
 	    width: 100%;
-	    max-height: 300px;	    
+	    max-height: 280px;	    
+	    min-height: 280px;	
 	    object-fit: cover;
 	    border-radius: 3px 3px 0 0;
 	    object-position: center;
@@ -432,7 +445,7 @@ a {
 
 	&-post {
 	    background: white;
-	    padding: 40px 60px;
+	    padding: 40px 100px;
 	    margin-top: -120px;
 	    margin-bottom: 40px;
 	    z-index: 1;
@@ -454,15 +467,26 @@ a {
 
 	&-post-content {		
 		line-height: 2em;		
-		font-size: 16px;
+		font-size: 17px;
 
-		p:first-child {
+		p:first-of-type {  
 		    font-family: 'Montserrat', sans-serif;
-		    font-size: 17px;		    
+		    font-size: 20px;		    
 		}
 
 		img {
 			max-width: 100%;
+		}
+
+		figure {
+			margin: 0;
+			text-align: center;
+		}
+	}
+
+	&-related {
+		.title-section {
+			margin-bottom: 20px;
 		}
 	}
 }
@@ -530,6 +554,14 @@ a {
 	align-self: center;
 }
 
+@media screen and (max-width: 1231px) {
+	.article {
+		&-post {
+			padding: 40px;
+		}
+	}
+}
+
 @media screen and (max-width: 981px) {
 	.article {
 		&-item {
@@ -564,6 +596,7 @@ a {
 
 		&__footer {
 			padding: 0;
+		    width: 100%;
 		}
 	}
 
@@ -590,27 +623,53 @@ a {
 
 	.title-section {
 		font-size: 2em;
-	}
 
-	.article-grid, .about-grid {
-		grid-template-columns: 1fr;
+		&.skew {
+			font-size: 2em;
+			top: -10px;
+			left: 10px;
+		}
 	}
+	
 
 	.article {
 		&-post {
-			padding: 30px;
+			padding: 20px;
+
+			&-content {
+				font-size: 16px;
+			}
 		}
+
+		&-grid {
+			grid-template-columns: 1fr;
+		}		
 	}
 
-	.about-grid {
-		height: auto;
-		margin-bottom: 0;
-	}
+	.about {
+		&-grid {
+			height: auto;
+			margin-bottom: 0;
+			grid-template-columns: 1fr .7fr;
+		}
 
-	.about-image {
-		min-height: 300px;
-	}
+		&-image {
+			min-height: 300px;
+		}
 
+		&-info {
+			max-width: 100%;
+		}
+	}	
+
+}
+
+@media screen and (max-width: 481px) {
+	.about {
+		&-grid {			
+			grid-template-columns: 1fr;
+		}
+	}	
 }
 
 @keyframes zoomIn {
