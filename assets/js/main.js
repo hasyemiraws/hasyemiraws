@@ -102,4 +102,19 @@ $(function() {
 			}
 		}
 	});
+
+	$('.book-item').each(function() {
+		var me = $(this);
+		var img_data = $(this).attr('data-image');
+		var style = '';
+		var img = document.createElement('img');
+		img.setAttribute('src', img_data);
+
+		img.addEventListener('load', function() {
+		    var vibrant = new Vibrant(img);
+		    var swatches = vibrant.swatches()		    		    
+            style += 'background-color:'+ swatches['DarkMuted'].getHex()+';';
+            me.attr('style', style);
+		});		
+	});	
 });

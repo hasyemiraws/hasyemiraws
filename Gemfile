@@ -28,3 +28,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Jekyll Plugin SEO
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
+gem 'jekyll-autoprefixer'

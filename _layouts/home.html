@@ -20,54 +20,47 @@ title: "Home - hasyemiraws"
     </div>
 </section>
 
-<section class="post--section">
-  <div class="container">
-    
-    <div id="dev__section">
+<section class="home--section post--section">
+  <div class="container">    
+    <div id="dev__section" class="section__list">
       <div class="top-section">
-        <a href="#"><h2 class="title-section skew">Recent Stories</h2></a>
+        <!-- <a href="#"> --><h2 class="title-section skew">Recent Stories</h2><!-- </a> -->
         <!-- <a href="#" class="section-read-more">View All </a> -->
       </div>                
        {% for post in site.posts limit:10 %}    
           {% if forloop.index <= 1 %}
             {% if forloop.index == 1 %}
               <div class="article-grid">
-            {% endif %}
+            {% endif %}                        
+                    <figure class="article-item">
+                      <img class="article-image" src="{{ post.featured_image }}">
+                      <figcaption class="article-text">                                                 
+                          {% if post.categories %}
+                            {% assign categories = post.categories %}
+                          {% else %}
+                            {% assign categories = page.categories %}
+                          {% endif %}
+                          {% for category in categories %}
+                          <span class="article-category-label">
+                            <!-- <a href="/categories/#{{category|slugize}}"> -->
+                              {{category}}
+                            <!-- </a> -->
+                          </span>
+                          {% unless forloop.last %}&nbsp;{% endunless %}
+                          {% endfor %}  
 
-                <div class="article-item">                  
-                  <a href="{{ post.url }}">
-                    <img class="article-image" src="{{ post.featured_image }}">            
-                  </a>
-                    <div class="article-text">                       
-                        <h3 class="article-title">
-                            <a href="{{ post.url }}">
-                              {{ post.title }}
-                            </a>
-                        </h3>
+                          <h3 class="article-title">                              
+                              {{ post.title }}                              
+                          </h3>
+                          
+                          <span class="article-category-label">
+                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                            {{ post.date | date: date_format }}
+                          </span>
 
-                        {% if post.categories %}
-                          {% assign categories = post.categories %}
-                        {% else %}
-                          {% assign categories = page.categories %}
-                        {% endif %}
-                        {% for category in categories %}
-                        <span class="article-category-label">
-                          <!-- <a href="/categories/#{{category|slugize}}"> -->
-                            {{category}}
-                          <!-- </a> -->
-                        </span>
-                        {% unless forloop.last %}&nbsp;{% endunless %}
-                        {% endfor %}
-
-                        <div class="article-excerpt">
-                          <p>
-                            {% if post.description %}
-                                {{ post.description }}
-                            {% endif %}
-                          </p>
-                        </div>                          
-                    </div>          
-                </div>      
+                          <a href="{{ post.url }}">Read More</a>                      
+                      </figcaption>                                                                 
+                    </figure>                    
 
                 {% if forloop.index >= 1 %}
               </div>  
@@ -76,17 +69,10 @@ title: "Home - hasyemiraws"
           {% elsif forloop.index <= 4 or forloop.index >= 8 %}
             {% if forloop.index == 2 or forloop.index == 8 %}
               <div class="article-grid">
-            {% endif %}
-            <div class="article-item" data-test="{{ forloop.index }}">                      
-                <a href="{{ post.url }}">
-                  <img class="article-image" src="{{ post.featured_image }}">
-                </a>
-                  <div class="article-text">                        
-                        <h3 class="article-title">
-                            <a href="{{ post.url }}">
-                              {{ post.title }}
-                            </a>
-                        </h3>
+            {% endif %}            
+                  <figure class="article-item" data-test="{{ forloop.index }}">                    
+                    <img class="article-image" src="{{ post.featured_image }}">  
+                    <figcaption class="article-text">                        
 
                         {% if post.categories %}
                           {% assign categories = post.categories %}
@@ -100,18 +86,20 @@ title: "Home - hasyemiraws"
                           <!-- </a> -->
                         </span>
                         {% unless forloop.last %}&nbsp;{% endunless %}
-                        {% endfor %}
+                        {% endfor %}                                                  
+                        
+                        <h3 class="article-title">                            
+                            {{ post.title }}                            
+                        </h3>
 
-                        <div class="article-excerpt">
-                            <p>
-                              {% if post.description %}
-                                  {{ post.description }}
-                              {% endif %}
-                            </p>
-                        </div>                            
-                    </div>           
-              </div>
+                        <span class="article-category-label">
+                          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                          {{ post.date | date: date_format }}
+                        </span>
 
+                        <a href="{{ post.url }}">Read More</a>
+                    </figcaption>                    
+                  </figure>                                                                        
               {% if forloop.index >= 10 or forloop.index >= 4 %}
                 {% if forloop.index >= 8 and forloop.index <= 10 %}                  
                 {% else %}
@@ -123,10 +111,8 @@ title: "Home - hasyemiraws"
                 <div class="article-item article-item-two-column">                      
                     <img class="article-image" src="{{ post.featured_image }}">
                     <div class="article-text">                          
-                        <h3 class="article-title">
-                            <a href="{{ post.url }}">
-                              {{ post.title }}
-                            </a>
+                        <h3 class="article-title">                            
+                            {{ post.title }}                            
                         </h3>
 
                         {% if post.categories %}
@@ -156,17 +142,10 @@ title: "Home - hasyemiraws"
             {% else %}
               {% if forloop.index == 6 %}
                 <div class="article-grid">
-              {% endif %}
-              <div class="article-item" data-test="test">
-                  <a href="{{ post.url }}">
-                    <img class="article-image" src="{{ post.featured_image }}">
-                  </a>
-                    <div class="article-text">                        
-                          <h3 class="article-title">
-                              <a href="{{ post.url }}">
-                                {{ post.title }}
-                              </a>
-                          </h3>
+              {% endif %}              
+                    <figure class="article-item" data-test="test">                      
+                      <img class="article-image" src="{{ post.featured_image }}">
+                      <figcaption class="article-text">
 
                           {% if post.categories %}
                             {% assign categories = post.categories %}
@@ -180,17 +159,18 @@ title: "Home - hasyemiraws"
                             <!-- </a> -->
                           </span>
                           {% unless forloop.last %}&nbsp;{% endunless %}
-                          {% endfor %}
+                          {% endfor %}       
 
-                          <div class="article-excerpt">
-                            <p>
-                              {% if post.description %}
-                                  {{ post.description }}
-                              {% endif %}
-                            </p>
-                        </div>                          
-                      </div>           
-                </div>
+                          <h3 class="article-title">                              
+                              {{ post.title }}                              
+                          </h3>
+                          <span class="article-category-label">
+                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                            {{ post.date | date: date_format }}
+                          </span>
+                          <a href="{{ post.url }}">Read More</a>       
+                      </figcaption>                                
+                    </figure>                                                                      
 
                 {% if forloop.index >= 7 %}
                   </div>  
@@ -198,7 +178,24 @@ title: "Home - hasyemiraws"
             {% endif %}
                         
         {% endfor %}
-      
-    </div>        
+      </div>
+    </div>
+    <div id="book_section" class="section__list">
+      <div class="top-section">
+        <!-- <a href="#"> --><h2 class="title-section skew">Books</h2><!-- </a> -->
+        <!-- <a href="#" class="section-read-more">View All </a> -->
+      </div>
+      <div class="book-grid">
+        {% for book in site.book %}
+        <a href="{{ book.url | prepend: site.baseurl }}" class="book-item" data-image="{{book.cover}}">
+            <img class="book-cover" src="{{book.cover }}" />            
+            <span class="book-caption">
+              {{book.judul }} <br/>              
+              {{book.penulis }}
+            </span>
+        </a>              
+        {% endfor %}     
+      </div>                      
+    </div>            
   </div>
 </section>

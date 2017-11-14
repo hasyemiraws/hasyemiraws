@@ -56,6 +56,7 @@ plugins:
   - jekyll-feed  
   - jekyll-seo-tag  
   - jekyll-sitemap
+  - jekyll-autoprefixer
 
 sass:
   style: compressed
@@ -65,6 +66,11 @@ google_site_verification: UA-108167393-1
 
 disqus:
   shortname: hasyemiraws
+
+collections:
+  book:
+    output: true
+    permalink: /book/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
