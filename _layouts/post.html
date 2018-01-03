@@ -14,17 +14,17 @@ layout: default
                 {% assign categories = page.categories %}
               {% endif %}
               {% for category in categories %}
-              <span class="article-category-label">
+              <span class="article-category-label animated fadeInUp">
                 <!-- <a href="/categories/#{{category|slugize}}"> -->
                   {{category}}
                 <!-- </a> -->
               </span>
               {% unless forloop.last %}&nbsp;{% endunless %}
               {% endfor %}
-              <h1>
+              <h1 class="animated fadeInUp">
                 {{ page.title | escape }}               
               </h1>                         
-              <span class="article-category-label">
+              <span class="article-category-label animated fadeInUp">
                 <time>
                   {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
                   {{ page.date | date: date_format }}

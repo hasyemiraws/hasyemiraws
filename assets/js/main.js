@@ -65,7 +65,7 @@ $(function() {
 		}
 	});
 
-	$('.nav__menu .hamburger').click(function() {
+	$('.nav__menu__dots').click(function() {
 		if ($(this).hasClass('is-active')) {
 			$(this).removeClass('is-active');				
 			$('body').css('overflow', 'auto');			
@@ -112,8 +112,8 @@ $(function() {
 
 		img.addEventListener('load', function() {
 		    var vibrant = new Vibrant(img);
-		    var swatches = vibrant.swatches()		    		    
-            style += 'background-color:'+ swatches['DarkMuted'].getHex()+';';
+		    var swatches = vibrant.swatches()			    	    		   
+            style += 'background-color:'+ swatches['Vibrant'].getHex()+';';
             me.attr('style', style);
 		});		
 	});	

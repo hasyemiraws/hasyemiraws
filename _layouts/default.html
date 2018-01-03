@@ -17,10 +17,10 @@
     <nav class="menu__overlay animated">
       <div class="menu__overlay--container">     
           <ul class="menu__list-link animated slideInUp">
-            <li class="active" data-category="dev"><a href="#">Dev</a></li>
-            <li data-category="books"><a href="#">Book</a></li>
-            <li data-category="travel"><a href="#">Travel</a></li>
-            <li data-category="life"><a href="#">Life</a></li>
+            <li class="active" data-category="dev"><a href="/dev">Dev</a></li>
+            <li data-category="books"><a href="/book">Book</a></li>
+            <li data-category="travel"><a href="/travel">Travel</a></li>
+            <li data-category="life"><a href="/life">Life</a></li>
           </ul>   
 
           <div class="menu__categories-image dev animated slideInUp">
@@ -55,7 +55,7 @@
   
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="{{ "/assets/js/Vibrant.min.js" | relative_url }}"></script>  
-  <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}"></script>    
+  <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}?t={{site.time | date: '%s%N'}}"></script>    
   </body>  
 
 </html>

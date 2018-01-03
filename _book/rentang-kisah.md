@@ -14,7 +14,7 @@ image: /assets/images/post/rentang-kisah/rentang-kisah-cover.jpg
 excerpt_separator: <!--more-->
 ---
 
-Rentang Kisah ini adalah buku debut pertama dari Gita Savitri Devi atau yang lebih di kenal dengan aliasnya di social media dengan nama: ___@gitasav___. Di buku perdananya ini, konten yang ia tuliskan disini adalah kisah perjalanan pribadinya dari dan sampai ke Jerman. Kisah bagaimana proses perjalanan ini bisa mengubahnya.
+Rentang Kisah ini adalah buku debut pertama dari Gita Savitri Devi atau yang lebih di kenal dengan aliasnya di social media dengan nama: <a href="https://www.instagram.com/gitasav/" title="gitasav" target="_blank">___@gitasav___</a>. Di buku perdananya ini, konten yang ia tuliskan disini adalah kisah perjalanan pribadinya dari dan sampai ke Jerman. Kisah bagaimana proses perjalanan ini bisa mengubahnya.
 
 <figure>
   <img src="/assets/images/post/rentang-kisah/rentang-kisah-cover.jpg" alt="Rentang Kisah oleh Gitasav" title="Rentang Kisah oleh Gitasav" />
@@ -25,13 +25,13 @@ Ketika gue tau kabar bahwa Gita akan launch buku ini dari instagramnya, gue suda
 
 Sebelum gue bahas ke isi bukunya, mari kita kenalan dulu sama penulisnya. Siapa sih Gita Savitri Devi? Inilah versi gue gimana mengenal sosok si Gita ini _coy_ (kata wajib Gita di tiap videonya).
 
-Gue yakin semua generasi milennial saat ini pasti tau lah tentang dia. Atau setidaknya sekedar tau. Dia adalah orang Indonesia yang kuliah S1 di Jerman (was, dia sudah menyelesaikannya di tahun 2017 ini), dan selama menjalani masa di Jerman itu, dia mulai mengekspresikan diri dia lewat video-videonya di YouTube. Banyak video yang dia buat, dari tutorial make up/hijab, vlog jalan-jalan atau cerita di Jerman, beropini tentang keresahan atau masalah yang sedang happening, dan ada juga video cover lagu. Dan gue yakin semua setuju kalo gue bilang video opini adalah salah satu yang paling menarik. (Walau, konten lainpun semuanya menarik).
+Gue yakin semua generasi milennial saat ini pasti tau lah tentang dia. Atau setidaknya sekedar tau. Dia adalah orang Indonesia yang kuliah S1 di Jerman (_was_, dia sudah menyelesaikannya di tahun 2017 ini), dan selama menjalani masa di Jerman itu, dia mulai mengekspresikan diri dia lewat video-videonya di YouTube. Banyak video yang dia buat, dari tutorial make up/hijab, vlog jalan-jalan atau cerita di Jerman, beropini tentang keresahan atau masalah yang sedang happening, dan ada juga video cover lagu. Dan gue yakin semua setuju kalo gue bilang video opini adalah salah satu yang paling menarik. (Walau, konten lainpun semuanya menarik).
 
-_Long story short, she became one of so called influencer or internet celeb in social media_, gue sebenarnya gatau mulai sejak kapan, darimana dan bagaimana Gita menjadi viral awalnya. Gue pribadi awal tau sosok Gita adalah waktu itu lagi cari-cari info kuliah di Jerman sekitar setahun lalu, and suddenly found her in search result. Dari situ akhirnya gue mulai tertarik dengan kontennya dia, karena cara pemikirannya dan pembawaannya yang gak terlalu sok ngartis, i mean she doing it for good purpose. Especially konten dia tentang beropini (dan selain itu juga karena suaranya yang bagus pas cover lagu & karena dia cantik lol).
+_Long story short, she became one of so called influencer or internet celeb in social media_, gue sebenarnya gatau mulai sejak kapan, darimana dan bagaimana Gita menjadi viral awalnya. Gue pribadi awal tau sosok Gita adalah waktu itu lagi cari-cari info kuliah di Jerman sekitar setahun lalu, _and suddenly found her in search result_. Dari situ akhirnya gue mulai tertarik dengan kontennya dia, karena cara pemikirannya dan pembawaannya yang gak terlalu sok ngartis, i mean she doing it for good purpose. _Especially_ konten dia tentang beropini (dan selain itu juga karena suaranya yang bagus pas cover lagu & karena dia cantik lol).
 
 Oke langsung aja ke review bukunya. 
 
-Dimulai dari fisik bukunya dulu, buku ini diterbitkan oleh Gagasmedia, dengan jumlah halaman sekitar 207 lembar. Jujur gue kurang suka dengan covernya, karena ketika Gita mengadakan vote untuk itu gue lebih milih desain lain, tapi siapalah gue? memang selera gue mungkin berbeda. Walau terlihat halamannya banyak, sebenernya ceritanya ga sebanyak itu, pertama selain karena font sizenya dan line heightnya, itu juga karena di pembatas cerita, Gita menampilkan beberapa foto-foto yang di ambil ketika dia di Jerman, dan tiap pembatas cerita pun di beri desain yang menarik sih. (And i do like it).
+Dimulai dari fisik bukunya dulu, buku ini diterbitkan oleh Gagasmedia, dengan jumlah halaman sekitar 207 lembar. Jujur gue kurang suka dengan covernya, karena ketika Gita mengadakan vote untuk itu gue lebih milih desain lain, tapi siapalah gue? memang selera gue mungkin berbeda. Walau terlihat halamannya banyak, sebenernya ceritanya ga sebanyak itu, pertama selain karena font sizenya dan line heightnya, itu juga karena di pembatas cerita, Gita menampilkan beberapa foto-foto yang di ambil ketika dia di Jerman, dan tiap pembatas cerita pun di beri desain yang menarik sih. (_And i do like it_).
 
 <figure>
   <img src="/assets/images/post/rentang-kisah/2017-11-09 07.17.24.jpg" alt="Desain Pembatas Buku Rentang Kisah" title="Desain Pembatas Buku Rentang Kisah" />
@@ -86,7 +86,7 @@ Sebenarnya di bagian ini ga berkaitan dengan kisah hidupnya Gita, tapi ini lebih
 
 ##### ___My notes on this book___
 
-Untuk masalah cerita, it’s so relatable ke beberapa kehidupan gue (I think even to many of us). Hampir kebanyakan cerita dan struggle yang dialami Gita juga gue alami. Bedanya adalah Gita handle it well, learnt from it well, sedangkan gue nggak sebaik dia hahaha. Beberapa kali gue merasa tersentil ketika baca, bukan tersentil lagi, tapi tertampar. plak!
+Untuk masalah cerita, it’s so relatable ke beberapa kehidupan gue (_I think even to many of us_). Hampir kebanyakan cerita dan struggle yang dialami Gita juga gue alami. Bedanya adalah Gita handle it well, learnt from it well, sedangkan gue nggak sebaik dia hahaha. Beberapa kali gue merasa tersentil ketika baca, bukan tersentil lagi, tapi tertampar. plak!
 
 Konten cerita di buku ini sebenernya tidak ada yang terlalu luar biasa, semua sederhana, itu lah yang membuat mudah dibaca dan dicerna bagi kita pembaca. Menurut gue cerita mengenai strugglenya di Jerman  cukup menarik. Disini Gita memperlihatkan kita bahwa itu nggak semudah yang terlihat oleh kita, gimana usahanya, prosesnya yang ia sudah alami itu banyak banget. Dari mulai awal sebelum berangkat sampai akhirnya lulus kuliah. Kisah asmaranya dengan Paul juga sesuatu yang buat gue merinding saat membacanya, ini juga bagian favorit gue. Karena cerita ini bukan cuma masalah dua hati, tapi juga masalah dua agama.
 
