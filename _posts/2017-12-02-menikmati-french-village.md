@@ -3,6 +3,7 @@ layout: post
 title:  "Short Trip ke Colmar French Village"
 comments: true
 date:   2017-12-2 00:00:00 +0800
+adsense: false
 categories: travel
 description: Akhirnya kesampean nulis post travel! Memang jalan-jalan yang direncanakan mendadak selalu jadi haha. Colmar Tropical French Village ini letaknya ada di Bukit Tinggi, dan jaraknya sebenarnya tidak terlalu jauh dari pusat kota Kuala Lumpur. Disini kita bisa menikmati suasana arsitektur Perancis, selain French Resort ada juga Japanesse Village untuk merasakan hidup ala-ala Jepang lengkap dengan Kimono, rumah nature khas Jepang.
 author: Hasyemi Rafsanjani Asyari
@@ -13,6 +14,7 @@ excerpt_separator: <!--more-->
 
 Akhirnya kesampean nulis post travel! Memang jalan-jalan yang direncanakan mendadak selalu jadi haha. Colmar Tropical French Village ini letaknya ada di Bukit Tinggi, dan jaraknya sebenarnya tidak terlalu jauh dari pusat kota Kuala Lumpur. Disini kita bisa menikmati suasana arsitektur Perancis, selain French Resort ada juga Japanesse Village untuk merasakan hidup ala-ala Jepang lengkap dengan Kimono, rumah nature khas Jepang.
 
+{% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Banner_ads_responsif -->
@@ -26,6 +28,7 @@ Akhirnya kesampean nulis post travel! Memang jalan-jalan yang direncanakan menda
 	</script>
 </div>
 <br/>
+{% endif %}
 
 Di trip kali ini gue jalan bareng dengan 2 teman kantor gue, Mo dari Tunisia dan Linda dari Taiwan (yang baru masuk di kantor gue di minggu ini). Karena ada hari libur di hari Jumat, kita yang ingin pergi ke suatu tempat di KL yang tidak terlalu jauh dan bisa di nikmati selama satu hari, memutuskan untuk pergi antara ke Genting Highland atau Berjaya Hills. Kita akhirnya memilih Berjaya Hills.
 
@@ -37,6 +40,7 @@ __DAN, gue lebih sarananin__, kalo memang bisa, lebih baik untuk sewa kendaraan,
 
 Lanjut ke tempatnya, menurut gue tempatnya oke, tiket masuk ke resort ini sendiri adalah 15rm per orang, dan bukan cuma French Village aja, ada juga Japanesse Village, Botanical Park, Golf court dari yang gue baca juga ada Horse Ride Trails dan beberapa Extreme Outdoor Activity lain. Tapi kali ini kita cuma pergi ke Japanesse Village, Botanical Park dan tentu saja terakhir French Village!
 
+{% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins class="adsbygoogle"
@@ -50,6 +54,7 @@ Lanjut ke tempatnya, menurut gue tempatnya oke, tiket masuk ke resort ini sendir
 	</script>
 </div>
 <br/>
+{% endif %}
 
 Di trip kami ini, kita pergi ke Japanesse Village terlebih dahulu sebelum ke French karena posisi keduanya berbeda dan berjauhan. Untuk mengunjungi keduanya kita bisa gunain shuttle bus yang munculnya kira-kira 20-30 menitan sekali. Di Japanesse Village, ini lebih nature, lebih adem. 
 
@@ -154,6 +159,7 @@ Selain itu, mereka punya beberapa performance seperti _stage dance_, _street dan
 
 Ekspektasi gue awalnya tempat ini lebih besar, tapi ternyata tidak sebesar yang gue bayangkan. But overall, the place is fun, nice, weather is cool there, but not too cold. Dan sangat _instagramable_ banget. I like it very much, and it's worth it!!
 
+{% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Footer_ads -->
@@ -167,3 +173,4 @@ Ekspektasi gue awalnya tempat ini lebih besar, tapi ternyata tidak sebesar yang 
 	</script>
 </div>
 <br/>
+{% endif %}

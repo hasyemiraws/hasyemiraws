@@ -21,7 +21,7 @@ description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hasyemiraws.com" # the base hostname & protocol for your site, e.g. http://example.com
 author: "Hasyemi Rafsanjani Asyari"
-tagline: High Functional Introvert.
+tagline: high functional introvert.
 
 twitter:
   username: hasyemiraws
@@ -56,13 +56,15 @@ plugins:
   - jekyll-feed  
   - jekyll-seo-tag  
   - jekyll-sitemap
-  - jekyll-autoprefixer
+  - jekyll-autoprefixer    
 
 sass:
   style: compressed
+  sass_dir: _sass
 
 google_analytics: UA-108167393-1
 google_site_verification: UA-108167393-1
+google_adsense: ca-pub-9523208256804448
 
 disqus:
   shortname: hasyemiraws

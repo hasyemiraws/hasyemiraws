@@ -1,0 +1,57 @@
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale3d(.9, .9, .9);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+        transform: scale3d(.9, .9, .9);
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fall {
+    0% {    
+        transform: rotate(0);    
+        animation-timing-function: cubic-bezier(.07, 2.02, .67, .57);
+    }  
+    100% {    
+        transform: rotate(200deg);        
+    }
+}
+
+@keyframes swing {
+    0% {    
+        transform: rotate(200deg);        
+    }     
+    100% {    
+        transform: rotate(160deg);    
+        animation-timing-function: cubic-bezier(.07, 2.02, .67, .57);    
+    }
+}
+  
+@keyframes wave {
+    0% {
+        transform: initial;
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}

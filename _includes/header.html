@@ -1,22 +1,33 @@
-<div class="row">
-    <nav class="nav">                
-        <div class="nav__logo">
-            <a href="/" class="logo">
-                <img class="logo__img" src="{{ '/assets/images/logo-white.png'|theme }}"/>
-            </a>
+<header class="header__top">
+    <div class="container container__header">
+        <div class="section section__top">
+            <div class="site_menu">
+                <div class="row">
+                    <nav class="header__nav">                
+                        <div class="header__nav__logo">
+                            <a href="/" class="logo"></a>
+                        </div>
+                        <div class="header__nav__menu">
+                            <button class="header-hamburger hamburger hamburger--elastic" type="button">
+                              <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                              </span>
+                            </button>             
+                        </div>        
+                    </nav>    
+                </div>
+            </div>                    
         </div>
-        <div class="nav__menu">
-            <!-- <button class="hamburger hamburger--elastic" type="button">
-              <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-              </span>
-            </button>  -->
-            <button class="nav__menu__dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <span>menu</span>
-            </button>            
-        </div>        
-    </nav>    
-</div>
+    </div>        
+
+    <nav class="menu__overlay animated">
+        <div class="menu__overlay--container">     
+            <ul class="menu__list-link">
+                <li><a href="/dev">Dev</a></li>
+                <li><a href="/book">Book</a></li>
+                <li><a href="/travel">Travel</a></li>
+                <li><a href="/thoughts">Thoughts</a></li>
+            </ul>           
+        </div>
+    </nav>
+</header>    

@@ -3,207 +3,47 @@ layout: default
 title: "Home - hasyemiraws"
 ---
 
-<section class="featured-cover">
-    <div class="featured">                             
-      <div class="hero">          
-        <div class="hero-item">
-          <div class="image hero-image hero__home">
-              <div class="hero-label">                  
-              <span class="small-title">A Journal of a</span>
-              <h1>
-                High Functional Introvert                  
-              </h1>           
-            </div>
-          </div>      
-        </div>          
-      </div>
-    </div>
+<section class="home--intro">    
+    <div class="home--hero-label">                  
+      <span class="small-title">A Journal of a</span>
+      <h1>
+        High Functional Introvert                  
+      </h1>           
+    </div>    
 </section>
 
-<section class="home--section post--section">
-  <div class="container">    
-    <div id="dev__section" class="section__list">
-      <div class="top-section">
-        <!-- <a href="#"> --><h2 class="title-section skew">Recent Stories</h2><!-- </a> -->
-        <!-- <a href="#" class="section-read-more">View All </a> -->
-      </div>                
+<section class="home--section content--section">  
+    <div class="post__list post__list--grid">      
        {% for post in site.posts limit:10 %}    
-          {% if forloop.index <= 1 %}
-            {% if forloop.index == 1 %}
-              <div class="article-grid article-grid-first-post">
-            {% endif %}                        
-                    <figure class="article-item">
-                      <img class="article-image" src="{{ post.featured_image }}">
-                      <figcaption class="article-text">                                                 
-                          {% if post.categories %}
-                            {% assign categories = post.categories %}
-                          {% else %}
-                            {% assign categories = page.categories %}
-                          {% endif %}
-                          {% for category in categories %}
-                          <span class="article-category-label">
-                            <!-- <a href="/categories/#{{category|slugize}}"> -->
-                              {{category}}
-                            <!-- </a> -->
-                          </span>
-                          {% unless forloop.last %}&nbsp;{% endunless %}
-                          {% endfor %}  
-
-                          <h3 class="article-title">                              
-                              {{ post.title }}                              
-                          </h3>
-                          
-                          <span class="article-category-label">
-                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                            {{ post.date | date: date_format }}
-                          </span>
-
-                          <a href="{{ post.url }}">Read More</a>                      
-                      </figcaption>                                                                 
-                    </figure>                    
-
-                {% if forloop.index >= 1 %}
-              </div>  
-            {% endif %}
-
-          {% elsif forloop.index <= 4 or forloop.index >= 8 %}
-            {% if forloop.index == 2 or forloop.index == 8 %}
-              <div class="article-grid article-grid-3">
-            {% endif %}            
-                  <figure class="article-item" data-test="{{ forloop.index }}">                    
-                    <img class="article-image" src="{{ post.featured_image }}">  
-                    <figcaption class="article-text">                        
-
-                        {% if post.categories %}
-                          {% assign categories = post.categories %}
-                        {% else %}
-                          {% assign categories = page.categories %}
-                        {% endif %}
-                        {% for category in categories %}
-                        <span class="article-category-label">
-                          <!-- <a href="/categories/#{{category|slugize}}"> -->
-                            {{category}}
-                          <!-- </a> -->
-                        </span>
-                        {% unless forloop.last %}&nbsp;{% endunless %}
-                        {% endfor %}                                                  
-                        
-                        <h3 class="article-title">                            
-                            {{ post.title }}                            
-                        </h3>
-
-                        <span class="article-category-label">
-                          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                          {{ post.date | date: date_format }}
-                        </span>
-
-                        <a href="{{ post.url }}">Read More</a>
-                    </figcaption>                    
-                  </figure>                                                                        
-              {% if forloop.index >= 10 or forloop.index >= 4 %}
-                {% if forloop.index == 4 %}
-                  </div>
-                {% endif %}
-                
-                {% if forloop.index >= 8 and forloop.index <= 10 %}                  
-                {% else %}                  
-                {% endif %}
+       <figure class="post__list--item">
+        <img data-object-fit class="post__list--image" src="{{ post.featured_image }}">
+          <figcaption class="post__list--text">                                                 
+              {% if post.categories %}
+                {% assign categories = post.categories %}
+              {% else %}
+                {% assign categories = page.categories %}
               {% endif %}
-          {% elsif forloop.index <= 5 %}
-            <div class="article-grid">    
-                <figure class="article-item article-item-two-column" data-test="{{ forloop.index }}">
-                    <img class="article-image" src="{{ post.featured_image }}">
-                    <figcaption class="article-text">
-                      {% if post.categories %}
-                        {% assign categories = post.categories %}
-                      {% else %}
-                        {% assign categories = page.categories %}
-                      {% endif %}
-                      {% for category in categories %}
-                      <span class="article-category-label">
-                        <!-- <a href="/categories/#{{category|slugize}}"> -->
-                          {{category}}
-                        <!-- </a> -->
-                      </span>
-                      {% unless forloop.last %}&nbsp;{% endunless %}
-                      {% endfor %}
+              {% for category in categories %}
+              <span class="post__list--category-label">
+                <!-- <a href="/categories/#{{category|slugize}}"> -->
+                  {{category}}
+                <!-- </a> -->
+              </span>
+              {% unless forloop.last %}&nbsp;{% endunless %}
+              {% endfor %}  
 
-                      <h3 class="article-title">                            
-                          {{ post.title }}                            
-                      </h3>
+              <h3 class="post__list--title">                              
+                  {{ post.title }}                              
+              </h3>
+              
+              <span class="post__list--category-label">
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                {{ post.date | date: date_format }}
+              </span>
 
-                      <span class="article-category-label">
-                        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                        {{ post.date | date: date_format }}
-                      </span>
-
-                      <div class="article-excerpt">
-                            <p>
-                              {% if post.description %}
-                                  {{ post.description }}
-                              {% endif %}
-                            </p>
-                        </div>  
-                        <a href="{{ post.url }}">Read More</a>                         
-                    </figcaption>            
-                </figure>                    
-            </div>            
-            {% else %}
-              {% if forloop.index == 6 %}
-                <div class="article-grid">
-              {% endif %}              
-                    <figure class="article-item" data-test="test">                      
-                      <img class="article-image" src="{{ post.featured_image }}">
-                      <figcaption class="article-text">
-
-                          {% if post.categories %}
-                            {% assign categories = post.categories %}
-                          {% else %}
-                            {% assign categories = page.categories %}
-                          {% endif %}
-                          {% for category in categories %}
-                          <span class="article-category-label">
-                            <!-- <a href="/categories/#{{category|slugize}}"> -->
-                              {{category}}
-                            <!-- </a> -->
-                          </span>
-                          {% unless forloop.last %}&nbsp;{% endunless %}
-                          {% endfor %}       
-
-                          <h3 class="article-title">                              
-                              {{ post.title }}                              
-                          </h3>
-                          <span class="article-category-label">
-                            {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                            {{ post.date | date: date_format }}
-                          </span>
-                          <a href="{{ post.url }}">Read More</a>       
-                      </figcaption>                                
-                    </figure>                                                                      
-
-                {% if forloop.index >= 7 %}
-                  </div>  
-                {% endif %}
-            {% endif %}            
-        {% endfor %}
-    </div>    
-    <div class="section__list book--section">
-      <div class="top-section">
-        <!-- <a href="#"> --><h2 class="title-section skew">Books</h2><!-- </a> -->
-        <!-- <a href="#" class="section-read-more">View All </a> -->
-      </div>
-      <div class="book-grid">
-        {% assign books = site.book | sort: 'date' | reverse %}
-        {% for book in books %}
-        <a href="{{ book.url | prepend: site.baseurl }}" class="book-item" data-image="{{book.cover}}">
-            <img class="book-cover" src="{{book.cover }}" />            
-            <span class="book-caption">
-              {{book.judul }} <br/>              
-              {{book.penulis }}
-            </span>
-        </a>              
-        {% endfor %}     
-      </div>                      
-    </div>            
-  </div>
+              <a href="{{ post.url }}">Read More</a>                      
+          </figcaption>                                                                 
+        </figure>                    
+      {% endfor %}
+    </div>        
 </section>

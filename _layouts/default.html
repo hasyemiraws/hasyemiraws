@@ -4,58 +4,22 @@
   {% include head.html %}
 
   <body>    
-    <header class="header__top">
-        <div class="container container__header">
-            <div class="section section__top">
-                <div class="site_menu">
-                    {% include header.html %}
-                </div>                    
-            </div>
-        </div>        
-    </header>    
-
-    <nav class="menu__overlay animated">
-      <div class="menu__overlay--container">     
-          <ul class="menu__list-link animated slideInUp">
-            <li class="active" data-category="dev"><a href="/dev">Dev</a></li>
-            <li data-category="books"><a href="/book">Book</a></li>
-            <li data-category="travel"><a href="/travel">Travel</a></li>
-            <li data-category="life"><a href="/life">Life</a></li>
-          </ul>   
-
-          <div class="menu__categories-image dev animated slideInUp">
-            <div class="menu__categories-label dev animated fadeIn">
-                <h4>CSS, HTML, JS, Front End Stuff, Coding Sh*t</h4>
-            </div>
-            <div class="menu__categories-label books animated">
-                <h4>Books Review. Boring.</h4>
-            </div>
-            <div class="menu__categories-label travel animated">
-                <h4>Did i actually travel?</h4>
-            </div>
-            <div class="menu__categories-label life animated">
-                <h4>Thought, ideas, sh*t talk</h4>
-            </div>
-          </div>
-      </div>
-    </nav>
-
-    <section>      
-        <section class="content__section">
-            {{ content }}
-        </section>                  
+    {% include header.html %}                
+    
+    <section>              
+      {{ content }}                      
     </section>    
 
 
-    <footer>
-      <div class="container container__footer">
+    <footer class="footer__section">
+      <div class="container">
         {% include footer.html %}
       </div>        
     </footer>    
   
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="{{ "/assets/js/Vibrant.min.js" | relative_url }}"></script>  
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      
   <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}?t={{site.time | date: '%s%N'}}"></script>    
+  <script type="text/javascript" src="{{ "/assets/js/objectFitPolyfill.basic.min.js" | relative_url }}?t={{site.time | date: '%s%N'}}"></script>    
   </body>  
 
 </html>

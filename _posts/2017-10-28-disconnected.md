@@ -3,7 +3,7 @@ layout: post
 title:  "Disconnected"
 comments: true
 date:   2017-11-01 00:00:00 +0800
-categories: life
+categories: thoughts
 description: Sebulan lalu gue tantang diri gue sendiri untuk melepaskan diri dari social media selama sebulan. I made it. (Well i cheated tho, once). So gimana rasanya? apa efeknya setelah sebulan? dan kenapa gue ngelakuin itu?
 author: Hasyemi Rafsanjani Asyari
 featured_image: /assets/images/post/disconnect.jpg

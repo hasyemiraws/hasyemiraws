@@ -1,0 +1,144 @@
+.container {	
+	&__header {
+		width: 90%;
+		z-index: 4;
+		padding: 0;
+	}
+
+	&__category {
+		margin-top: 50px;
+	}
+}
+
+.header {
+    &__top {
+	position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 20px;
+    transition: all ease-in 0.4s;
+    
+        &__scroll {
+            top: 0;
+            background: $white;
+        }
+    }
+
+    &-sticky {        
+        transform: translateY(-80px);
+    }
+
+    &-sticky-active {	            
+        transform: translateY(0px);
+    }
+
+    &__nav {        
+        display: flex;
+        justify-content: space-between;        
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;                
+    }
+
+    &__nav__logo {
+        max-height: 55px;
+        line-height: 0;
+
+        .logo {
+			display: inline-block;			
+			height: 45px;
+			width: 45px;
+			background-image: url('/assets/images/logo-black.png');
+			background-size: contain;
+			background-repeat: no-repeat;   
+			will-change: background-image;
+			transition: background-image 0.5s ease-in-out;         
+		}			
+
+		.menu-active & {
+			.logo {
+				background-image: url('/assets/images/logo-white.png');
+
+				@include breakpoint(phablet) {
+					background-image: url('/assets/images/logo-black.png');
+				}
+			}
+		}
+    }
+
+    &-hamburger {
+		padding-top: 10px;
+		padding-right: 0;
+	}	
+}
+
+.nav__menu {
+	display: flex;
+	justify-content: flex-end;
+
+	&__dots {
+	    -webkit-appearance: none;
+	    border: none;
+	    width: auto;
+	    padding: 0;
+
+	    span {
+	    	display: block;
+	    	color: white;
+    	    position: absolute;
+    	    font-size: 12px;
+    	    transform: translateY(-25px);
+    	    opacity: 0;
+    	    transition: opacity ease 0.3s, transform ease 0.2s;
+	    }
+
+	    &:hover {
+	    	.dot {
+	    		animation: wave 0.1s cubic-bezier(0.21, 1.05, 1, 1) forwards;
+
+				&:nth-child(2) {
+					animation-delay: 0.1s;
+				}
+
+				&:nth-child(3) {
+					animation-delay: 0.2s;
+				}
+	    	}
+
+	    	span {
+		    	transform: translateY(-10px);
+	    	    opacity: 1;
+	    	    transition: all 0.2 ease;
+		    }
+	    }
+	}
+}
+
+.nav__elem {
+	display: inline-block;
+	margin: auto 10px;
+}
+
+.nav__link {
+	padding: 10px;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 15px;
+
+	&:hover {
+		color: #7d8588;
+	}
+}
+
+.dot {
+	display:inline-block;
+	width:7px;
+	height:7px;
+	border-radius:50%;
+	margin-right:3px;
+	background:#fff;		
+}
+
+.logo__img {
+	max-height: 45px;
+}

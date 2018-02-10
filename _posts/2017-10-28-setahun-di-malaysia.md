@@ -3,7 +3,7 @@ layout: post
 title:  "Setahun di Malaysia"
 comments: true
 date:   2017-10-28 18:00:00 +0800
-categories: life
+categories: thoughts
 description: I survive first round. Barely survive. Gak terasa gue udah kerja di Malaysia selama setahun (lebih tepatnya sebenarnya 11 bulan, karena di bulan Desember gue di "pulangkan"). Di tulisan kali ini gue ingin cerita gimana akhirnya gue sampai disini dan perasaan gue hidup selama setahun.
 author: Hasyemi Rafsanjani Asyari
 featured_image: /assets/images/post/kuala-lumpur.jpg

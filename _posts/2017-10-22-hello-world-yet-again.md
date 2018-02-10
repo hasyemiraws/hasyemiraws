@@ -3,7 +3,7 @@ layout: post
 title:  "Hello World! Yet Again"
 comments: true
 date:   2017-10-22 18:00:00 +0800
-categories: life
+categories: thoughts
 description: I think most dev person or someone who learn programming language will be familiar with this expression. Every time you learn new language, you'll probably starting out with a very plain and simple yet useless app just to echo out a word "Hello World". Well that's good, at least it means you're starting out to learn something.
 author: Hasyemi Rafsanjani Asyari
 featured_image: /assets/images/post/hello-world.jpeg

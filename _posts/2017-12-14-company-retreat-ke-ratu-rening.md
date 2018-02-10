@@ -3,6 +3,7 @@ layout: post
 title:  "Company Retreat 3 hari 2 malem ke Ratu Rening"
 comments: true
 date:   2017-12-14 00:00:00 +0800
+adsense: false
 categories: travel
 description: Yeay, tiba saatnya menuju penghujung tahun, saatnya melepas beban, melepas stress dari semua pekerjaan, mari bersenang-senang! Kembali ke alam! And we had so much fun together! Chill out di resort bernuansa alam, trekking ke air terjun dan water rafting!
 author: Hasyemi Rafsanjani Asyari
@@ -13,6 +14,7 @@ excerpt_separator: <!--more-->
 
 Yeay, tiba saatnya menuju penghujung tahun, saatnya melepas beban, melepas stress dari semua pekerjaan, mari bersenang-senang! Kembali ke alam! _And we had so much fun together_! _Chill out_ di resort bernuansa alam, trekking ke air terjun dan water rafting!
 
+{% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Banner_ads_responsif -->
@@ -26,6 +28,7 @@ Yeay, tiba saatnya menuju penghujung tahun, saatnya melepas beban, melepas stres
 	</script>
 </div>
 <br/>
+{% endif %}
 
 Setelah setahun lalu gue melewatkan year end company trip sebelumnya ke Port Dickson, karena insiden di "deportasi", kali ini gue tidak mau melewatkannya lagi.
 
@@ -107,6 +110,7 @@ So setelah trekking, kembali ke resort, istirahat sejenak dan makan siang, kita 
 
 Ratu rening ini lokasinya cukup strategis banget, karena untuk ke Genting hanya sekitar 30-45 menit. Awalnya, kita rencananya mau coba _**cable car Awana Sky**_ yang terkenal di Genting itu, tapiiiii kecewa karena hujan badai mulai turun, dan udah nggak _worth it_ juga untuk tetep naik cable car, karena kita gabisa liat apa-apa. Akhirnya ke atas cuma untuk dinner aja deh.
 
+{% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins class="adsbygoogle"
@@ -120,6 +124,8 @@ Ratu rening ini lokasinya cukup strategis banget, karena untuk ke Genting hanya 
 	</script>
 </div>
 <br/>
+{% endif %}
+
 Jujur walau ga naik cable car, gue tetap senang karena belum pernah ke Genting, yeay. Dan memang gede banget Genting ini, dan karena lagi badai kabutnya dan dinginnya bener-bener terasa. Setelah dinner, balik ke penginapan dan _most of time_ kita habiskan waktu bersama dengan game.
 
 **DAY 2.**
@@ -181,7 +187,7 @@ _That's all! Looking forward for next years lol._
 Photo by <a href="https://www.instagram.com/medmehrez/" title="Mo" target="_blank">@medmehrez</a><br/>
 <a href="http://malaysia-whitewater-rafting.com/" title="water rafting">KKB Water Rafting Website</a>
 
-
+{% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Footer_ads -->
@@ -195,3 +201,4 @@ Photo by <a href="https://www.instagram.com/medmehrez/" title="Mo" target="_blan
 	</script>
 </div>
 <br/>
+{% endif %}

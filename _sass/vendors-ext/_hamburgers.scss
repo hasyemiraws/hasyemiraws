@@ -1,0 +1,12 @@
+.hamburger-inner, 
+.hamburger-inner:after, 
+.hamburger-inner:before {
+	background-color: $black;
+	width: 30px;
+    height: 1px;
+    
+    .menu-show & {
+        background-color: $white;
+    }
+
+}
