@@ -2,6 +2,7 @@
 layout: post
 title:  "10 Jam Layover di Singapore"
 comments: true
+adsense: true
 date:   2018-02-01 00:00:00 +0800
 adsense: false
 categories: travel
@@ -16,6 +17,22 @@ excerpt_separator: <!--more-->
 Sekitar 2 atau 3 minggu lalu gue melakukan hal yang bisa dibilang nekat, sesuatu yang spontan dan baru bagi gue. Gue pergi ke Singapore. Ok, kelihatannya normal, "ke Singapore buat jalan-jalan, _it's ok_, _nothing special about that_. Semua orang juga pernah jalan-jalan ke Singapore, ga ada apa-apanya deh". itu mungkin pikir kalian. _But no_, ini sedikit berbeda. Gue kesana sebenernya hanya untuk transit dari Malaysia ke Jakarta.
 
 _Ok, hold on_, Malaysia - Jakarta, tapi transit ke Singapore? Ini kaya dari Bekasi mau ke Jakarta tapi muter dulu lewat Bogor kota (ini perumpaan gue _acceptable_ ga sih?). _So anyway_, kenapa gue ngelakuin ini? Gue awalnya memang berencana untuk kesana di akhir tahun 2017 atau tahun baru 2018, tapi karena beberapa alasan (read: ga ada duit coy) akhirnya gue gajadi kesana. 
+
+{% if page.adsense %}
+<div class="ads">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Ads Header -->
+	<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="1649271984"
+		data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<br/>
+{% endif %}
 
 Karena kebetulan banget ketika Januari akan pulang, dan gue nemu opsi termurah adalah dengan Scoot yang harus transit dulu ke Singapore, jadi gue ambil penerbangan itu. Karena transitnya pun lumayan 10 jam. Maka gue berpikir, kenapa nggak nekat explore Singapore dalam waktu 10 jam?
 
@@ -105,6 +122,22 @@ Dan setelahnya gue berjalan ke arah ArtScience museum.
 </div>
 
 <br/>
+{% if page.adsense %}
+<div class="ads">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle"
+		style="display:block; text-align:center;"
+		data-ad-layout="in-article"
+		data-ad-format="fluid"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="7995188488"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<br/>
+{% endif %}
+
 ___2. Cross the Helix Bridge___
 
 Tidak jauh dari ArtScience museum gue melihat sebuah jembatan yaitu Helix Bridge, akhirnya gue mencoba menyebrangi karena dari situ gue bisa ke The Float atau gue mau coba atau jalan terus sampai ke arah Promenade, tapi _another unlucky day_, ada perbaikan jalan ditutup jadi gue gabisa lewat, jadi gue balik ke dalam mall setelahnya.
@@ -161,3 +194,19 @@ _But overall i very like it, i try to enjoy it as much as i can_. _It's been a n
 But yeah, it was fun. I definitely wants to go there again someday, but next time with a proper plan. 
 
 That's it for today, thank you! ☺️ 
+
+{% if page.adsense %}
+<div class="ads">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Ads Footer -->
+	<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="8051028808"
+		data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<br/>
+{% endif %}

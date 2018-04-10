@@ -1,7 +1,6 @@
 .home {
     &--intro {
-        height: 100%;
-        min-height: 90vh;
+        height: 90%;        
         display: flex;        
     }    
 
@@ -36,7 +35,64 @@
 
     &--section {
 
-    }
+	}
+	
+	&--pagination {
+		display: flex;
+		margin-top: 40px;
+		padding: 0 30px;
+		justify-content: space-between;
+
+		&_next-stories a, &_prev-stories a {
+			font-size: 24px;
+			color: #101010;
+			text-transform: uppercase;		
+
+			@include breakpoint('mobile') {
+				font-size: 19px;
+			}
+			
+			.arrow {				
+				@include breakpoint('phablet') {
+					opacity: 0;
+					transition: all 0.3s ease-in-out;
+				}								
+			}
+
+			.arrow-right {
+				margin-left: 5px;
+
+				@include breakpoint('phablet') {
+					margin-left: 0;
+				}								
+			}
+
+			.arrow-left {
+				margin-right: 5px;
+
+				@include breakpoint('phablet') {
+					margin-right: 0;
+				}					
+			}
+
+			&:hover {
+				@include breakpoint('phablet') {
+					.arrow {
+						opacity: 1;					
+						// transform: translateX(5px);
+					}
+
+					.arrow-right {
+						margin-left: 5px;
+					}
+
+					.arrow-left {
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
 }
 
 

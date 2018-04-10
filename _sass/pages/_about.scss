@@ -1,0 +1,122 @@
+.about {
+    &_container {
+        height: 100%;
+        max-height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &_row {
+        &:nth-child(1) {
+            flex: 1;        
+        }
+        
+        &:nth-child(2) {
+            width: 40%;        
+        }
+    }    
+
+    &_photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+
+        &-bg {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                content: '';
+                background: #101010;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &_image {
+        height: 150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+
+        @include breakpoint(tablet) {
+            height: 200px;
+            width: 200px;
+        }
+    }
+
+    &_text {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 50px;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+
+        @include breakpoint(tablet) {
+            padding: 0 100px;
+        }
+
+        &-intro {
+            margin-top: 15px;
+            margin-bottom: 0;            
+            font-size: 12px;            
+        }
+
+        &-wrap {
+            margin-bottom: 10px;
+            font-size: 21px;
+            height: 50px;
+            text-transform: uppercase;
+            font-family: $font-primary;
+            font-weight: 500;
+
+            @include breakpoint(tablet) {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+#barba-wrapper, .barba-container {
+    height: 100%;
+}
+
+.word {
+    position: absolute;    
+    opacity: 0;
+}
+
+.letter {
+    display: inline-block;
+    position: relative;    
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.20s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.30s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

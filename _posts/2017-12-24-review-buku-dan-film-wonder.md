@@ -4,7 +4,7 @@ title:  "Review Buku & Film Wonder oleh R. J. Palacio"
 judul: "Wonder"
 penulis: "R. J. Palacio"
 cover: /assets/images/post/wonder/cover.jpg
-adsense: false
+adsense: true
 comments: true
 categories: ['book']
 permalink: /:categories/:title/
@@ -21,12 +21,12 @@ Wonder adalah buku novel bergenre anak-anak karya dari R. J. Palacio, bercerita 
 {% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Banner_ads_responsif -->
+	<!-- Ads Header -->
 	<ins class="adsbygoogle"
-	     style="display:block"
-	     data-ad-client="ca-pub-9523208256804448"
-	     data-ad-slot="9139195523"
-	     data-ad-format="auto"></ins>
+		style="display:block"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="1649271984"
+		data-ad-format="auto"></ins>
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
@@ -74,13 +74,13 @@ Cerita di akhiri dengan kelulusan kelas, dimana Auggie mendapatkan penghargaan b
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins class="adsbygoogle"
-	     style="display:block; text-align:center;"
-	     data-ad-layout="in-article"
-	     data-ad-format="fluid"
-	     data-ad-client="ca-pub-9523208256804448"
-	     data-ad-slot="3264762757"></ins>
+		style="display:block; text-align:center;"
+		data-ad-layout="in-article"
+		data-ad-format="fluid"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="7995188488"></ins>
 	<script>
-	     (adsbygoogle = window.adsbygoogle || []).push({});
+		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 </div>
 <br/>
@@ -125,12 +125,12 @@ Terima kasih sudah membaca, semoga bermanfaat! Critics is always welcome dan jik
 {% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Footer_ads -->
+	<!-- Ads Footer -->
 	<ins class="adsbygoogle"
-	     style="display:block"
-	     data-ad-client="ca-pub-9523208256804448"
-	     data-ad-slot="9003587861"
-	     data-ad-format="auto"></ins>
+		style="display:block"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="8051028808"
+		data-ad-format="auto"></ins>
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>

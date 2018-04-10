@@ -3,8 +3,6 @@ layout: default
 title: "Home - hasyemiraws"
 ---
 
-{% assign lang-posts=paginator.posts | where:"i18n-link", page.i18n-link | sort: 'lang' %}
-
 <section class="home--intro">    
     <div class="home--hero-label">                  
       <span class="small-title">A Journal of a</span>
@@ -16,7 +14,7 @@ title: "Home - hasyemiraws"
 
 <section class="home--section content--section">  
     <div class="post__list post__list--grid">      
-       {% for post in lang-posts limit:10 %}    
+       {% for post in paginator.posts %}            
        <figure class="post__list--item">
         <img data-object-fit class="post__list--image" src="{{ post.featured_image }}">
           <figcaption class="post__list--text">                                                 
@@ -45,19 +43,22 @@ title: "Home - hasyemiraws"
 
               <a href="{{ post.url }}">Read More</a>                      
           </figcaption>                                                                 
-        </figure>                    
+        </figure>                         
       {% endfor %}
     </div>        
+
     <!-- pagination -->
     {% if paginator.total_pages > 1 %}
-    <div class="pagination"> 
+    <div class="home--pagination"> 
       {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+        <div class="home--pagination_prev-stories">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class=" arrow arrow-left fa fa-angle-left"></i> Newer Stories</a>
+        </div>        
       {% else %}
-        <span>&laquo; Prev</span>
+        <div class="home--pagination_prev-stroies">&nbsp;</div>        
       {% endif %}
 
-      {% for page in (1..paginator.total_pages) %}
+      <!-- {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
           <span class="webjeda">{{ page }}</span>
         {% elsif page == 1 %}
@@ -65,12 +66,14 @@ title: "Home - hasyemiraws"
         {% else %}
           <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
         {% endif %}
-      {% endfor %}
-
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-      {% else %}
-        <span>Next &raquo;</span>
+      {% endfor %} -->
+      
+      {% if paginator.next_page %}        
+        <div class="home--pagination_next-stories">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Stories <i class=" arrow arrow-right fa fa-angle-right"></i></a>      
+        </div> 
+      {% else %}       
+        <div class="home--pagination_next-stroies">&nbsp;</div>
       {% endif %}
     </div>
     {% endif %}

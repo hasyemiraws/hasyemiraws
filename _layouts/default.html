@@ -3,23 +3,25 @@
 
   {% include head.html %}
 
-  <body>    
-    {% include header.html %}                
-    
-    <section>              
-      {{ content }}                      
-    </section>    
-
-
-    <footer class="footer__section">
-      <div class="container">
-        {% include footer.html %}
-      </div>        
-    </footer>    
-  
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      
-  <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}?t={{site.time | date: '%s%N'}}"></script>    
-  <script type="text/javascript" src="{{ "/assets/js/objectFitPolyfill.basic.min.js" | relative_url }}?t={{site.time | date: '%s%N'}}"></script>    
-  </body>  
-
+  <body>            
+    <div id="barba-wrapper">
+      <div class="barba-container">                        
+          {% include header.html %}            
+          {{ content }}                      
+      
+          <div class="footer__section">
+            <div class="container">
+              {% include footer.html %}
+            </div>        
+          </div>                    
+        </div>      
+    </div>    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>      
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript"></script>  
+    <script src="{{ "/assets/js/disqusloader.js" | relative_url }}?t={{site.time | date: '%s%N'}}"></script>
+    <script type="text/javascript" src="{{ "/assets/js/objectFitPolyfill.basic.min.js" | relative_url }}?t={{site.time | date: '%s%N'}}"></script>    
+    <script type="text/javascript" src="{{ "/assets/js/Vibrant.min.js" | relative_url }}?t={{site.time | date: '%s%N'}}"></script>    
+    <script type="text/javascript" src="{{ "/assets/js/main.js" | relative_url }}?t={{site.time | date: '%s%N'}}"></script>        
+  </body>    
 </html>

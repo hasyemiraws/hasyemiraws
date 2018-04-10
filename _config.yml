@@ -23,6 +23,9 @@ url: "https://hasyemiraws.com" # the base hostname & protocol for your site, e.g
 author: "Hasyemi Rafsanjani Asyari"
 tagline: high functional introvert.
 
+paginate: 10
+paginate_path: /:num/
+
 twitter:
   username: hasyemiraws
 
@@ -56,7 +59,9 @@ plugins:
   - jekyll-feed  
   - jekyll-seo-tag  
   - jekyll-sitemap
-  - jekyll-autoprefixer    
+  - jekyll-paginate   
+  - jekyll-autoprefixer   
+  - jekyll-polyglot
 
 sass:
   style: compressed
@@ -75,6 +80,11 @@ collections:
     permalink: /book/:path/
 
 include: ['.htaccess']
+
+languages: ["en", "id"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css"]
+parallel_localization: false
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

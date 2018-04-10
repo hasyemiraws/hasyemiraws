@@ -3,7 +3,7 @@ layout: post
 title:  "Short Trip ke Colmar French Village"
 comments: true
 date:   2017-12-2 00:00:00 +0800
-adsense: false
+adsense: true
 categories: travel
 description: Akhirnya kesampean nulis post travel! Memang jalan-jalan yang direncanakan mendadak selalu jadi haha. Colmar Tropical French Village ini letaknya ada di Bukit Tinggi, dan jaraknya sebenarnya tidak terlalu jauh dari pusat kota Kuala Lumpur. Disini kita bisa menikmati suasana arsitektur Perancis, selain French Resort ada juga Japanesse Village untuk merasakan hidup ala-ala Jepang lengkap dengan Kimono, rumah nature khas Jepang.
 author: Hasyemi Rafsanjani Asyari
@@ -17,12 +17,12 @@ Akhirnya kesampean nulis post travel! Memang jalan-jalan yang direncanakan menda
 {% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Banner_ads_responsif -->
+	<!-- Ads Header -->
 	<ins class="adsbygoogle"
-	     style="display:block"
-	     data-ad-client="ca-pub-9523208256804448"
-	     data-ad-slot="9139195523"
-	     data-ad-format="auto"></ins>
+		style="display:block"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="1649271984"
+		data-ad-format="auto"></ins>
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
@@ -44,13 +44,13 @@ Lanjut ke tempatnya, menurut gue tempatnya oke, tiket masuk ke resort ini sendir
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins class="adsbygoogle"
-	     style="display:block; text-align:center;"
-	     data-ad-layout="in-article"
-	     data-ad-format="fluid"
-	     data-ad-client="ca-pub-9523208256804448"
-	     data-ad-slot="3264762757"></ins>
+		style="display:block; text-align:center;"
+		data-ad-layout="in-article"
+		data-ad-format="fluid"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="7995188488"></ins>
 	<script>
-	     (adsbygoogle = window.adsbygoogle || []).push({});
+		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 </div>
 <br/>
@@ -162,12 +162,12 @@ Ekspektasi gue awalnya tempat ini lebih besar, tapi ternyata tidak sebesar yang 
 {% if page.adsense %}
 <div class="ads">
 	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Footer_ads -->
+	<!-- Ads Footer -->
 	<ins class="adsbygoogle"
-	     style="display:block"
-	     data-ad-client="ca-pub-9523208256804448"
-	     data-ad-slot="9003587861"
-	     data-ad-format="auto"></ins>
+		style="display:block"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="8051028808"
+		data-ad-format="auto"></ins>
 	<script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>

@@ -3,7 +3,7 @@ layout: post
 title:  "Review Buku Anak Rantau dari Ahmad Fuadi"
 judul: "Anak Rantau"
 penulis: "Ahmad Fuadi"
-adsense: false
+adsense: true
 comments: true
 categories: ['book']
 permalink: /:categories/:title/
@@ -15,6 +15,22 @@ excerpt_separator: <!--more-->
 ---
 
 Pada dasarnya kita semua ini adalah anak rantau, kita semua tengah merantau di dunia ini, dunia milik-Nya. Belajar, mencari bekal, untuk kembali ke kampung halaman. Kampung halaman-Nya.
+
+{% if page.adsense %}
+<div class="ads">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Ads Header -->
+	<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="1649271984"
+		data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<br/>
+{% endif %}
 
 Buku ini untuk mereka yang merasa di tinggalkan, merasa terbuang, mereka yang menginginkan kesempatan kedua, mereka yang mendendam dan mereka yang perlu memaafkan. Untuk orang tua dan untuk anak yang saling mencintai, tapi sulit untuk mengungkapkan. Untuk sahabat, untuk diri kita sendiri mempersiapkan dan memperkuat bekal kita.
 
@@ -29,6 +45,21 @@ Jadi sepanjang buku ini kita akan dibawa untuk menikmati petualangan Hepi yang m
 
 >"Alam semesta ini penuh kejutan. Coba kau amati dan renungkan. Ambil pelajaran dari semuanya. Itulah yang disebut orang-orang tua kita di Minang, _alam takambang jadi guru_. Alam terkembang jadikan guru." (hal. 18)
 
+{% if page.adsense %}
+<div class="ads">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle"
+		style="display:block; text-align:center;"
+		data-ad-layout="in-article"
+		data-ad-format="fluid"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="7995188488"></ins>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<br/>
+{% endif %}
 
 Selain itu ada banyak konflik lain di sepanjang buku ini selain dari konflik Hepi. Konflik masa lalu yang melibatkan antara Martiaz dan ayahnya, Datuk. Datuk dengan kesalahan masa lalunya. Pandeka Luko dengan luka lamanya. Ada juga konflik kriminal yang terjadi di kampung Tanjung Durian.
 
@@ -59,3 +90,19 @@ ___Pandeka Luko___
 Akhir dari buku ini sepertinya agak menggantung, ada beberapa yang sepertinya dibiarkan masih misteri, mungkinkah akan ada buku lanjutannya? Siapa yang tahu, kita tunggu saja.
 
 Sekian untuk review buku ini, terima kasih para pembaca  :)
+
+{% if page.adsense %}
+<div class="ads">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Ads Footer -->
+	<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-9523208256804448"
+		data-ad-slot="8051028808"
+		data-ad-format="auto"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>
+<br/>
+{% endif %}
