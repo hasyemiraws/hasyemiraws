@@ -4,11 +4,20 @@
     @if $point == desktop {
       @media (min-width: $lg) { @content ; }
    }
+   @else if $point == desktop_hd {
+    @media (min-width: $xlg) { @content ; }
+    }
     @else if $point == laptop {
       @media (min-width: $md) { @content ; }
    }
+   @else if $point == max_tablet {
+    @media (max-width: $md) { @content ; }
+  }
      @else if $point == tablet {
       @media (min-width: $sm) { @content ; }
+   }
+   @else if $point == max_phablet {
+    @media (max-width: $sm)  { @content ; }
    }
     @else if $point == phablet {
       @media (min-width: $xs)  { @content ; }

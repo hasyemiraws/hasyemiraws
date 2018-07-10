@@ -29,6 +29,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'jekyll-autoprefixer'
-gem 'jekyll-paginate'
+gem 'jekyll-paginate-v2'
 gem "jekyll-polyglot"
 gem "win32-process"

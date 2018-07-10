@@ -16,7 +16,7 @@ image: /assets/images/post/wonder/wonder-cover-post.png
 excerpt_separator: <!--more-->
 ---
 
-Wonder adalah buku novel bergenre anak-anak karya dari R. J. Palacio, bercerita tentang kisah Auggie, seorang anak yang mempunyai kelainan pada wajahnya dimana ia memulai membuka dan memberanikan diri keluar dari zona nyamannya sendiri, keluar dan menghadapi kehidupan nyata dengan keadaan serta perbedaan yang ia miliki dan juga bercerita tentang dunia yang mengitarinya.
+<p class="intro">Wonder adalah buku novel bergenre anak-anak karya dari R. J. Palacio, bercerita tentang kisah Auggie, seorang anak yang mempunyai kelainan pada wajahnya dimana ia memulai membuka dan memberanikan diri keluar dari zona nyamannya sendiri, keluar dan menghadapi kehidupan nyata dengan keadaan serta perbedaan yang ia miliki dan juga bercerita tentang dunia yang mengitarinya.</p>
 
 {% if page.adsense %}
 <div class="ads">

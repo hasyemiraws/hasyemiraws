@@ -14,7 +14,7 @@ featured_image: /assets/images/post/anak-rantau/cover.jpeg
 excerpt_separator: <!--more-->
 ---
 
-Pada dasarnya kita semua ini adalah anak rantau, kita semua tengah merantau di dunia ini, dunia milik-Nya. Belajar, mencari bekal, untuk kembali ke kampung halaman. Kampung halaman-Nya.
+<p class="intro">Pada dasarnya kita semua ini adalah anak rantau, kita semua tengah merantau di dunia ini, dunia milik-Nya. Belajar, mencari bekal, untuk kembali ke kampung halaman. Kampung halaman-Nya.</p>
 
 {% if page.adsense %}
 <div class="ads">

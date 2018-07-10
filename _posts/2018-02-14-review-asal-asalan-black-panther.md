@@ -12,7 +12,7 @@ image: /assets/images/post/black-panther/cover.jpg
 excerpt_separator: <!--more-->
 ---
 
-Review asal-asalan adalah segmen konten yang baru yang akan gue buat di blog ini. Karena gue pribadi suka nonton film, dan terkadang gatel untuk nulis kesan gue terhadap film itu. Kenapa asal-asalan karena gue bukan ahli mengulas dan mengkritik yang profesional, jadi gue tuliskan sesuka gue dan ini adalah penilaian pribadi/subjektif dari gue.
+<p class="intro">Review asal-asalan adalah segmen konten yang baru yang akan gue buat di blog ini. Karena gue pribadi suka nonton film, dan terkadang gatel untuk nulis kesan gue terhadap film itu. Kenapa asal-asalan karena gue bukan ahli mengulas dan mengkritik yang profesional, jadi gue tuliskan sesuka gue dan ini adalah penilaian pribadi/subjektif dari gue.</p>
 
 Black Panther di sutradai oleh ___Ryan Coogler___, di bintangi oleh ___Chadwick Boseman___, ___Michael B Jordan___, ___Lupita Nyong'o___, ___Martin Freeman___ dan bintang-bintang lainnya yg kalo disebut pun ga bakal ada yang tau. Terhitung ini adalah film nomer ke-18 (kalau gue hitung-hitung) dari _Marvel Cinematic Universe_, yang masuk ke fase 3 dari seri ini.
 

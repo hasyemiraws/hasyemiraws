@@ -14,7 +14,7 @@ excerpt_separator: <!--more-->
 
 <h6>Listen to this post</h6>
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/392885169&amp;color=%231c1816&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe><br/>
-Sekitar 2 atau 3 minggu lalu gue melakukan hal yang bisa dibilang nekat, sesuatu yang spontan dan baru bagi gue. Gue pergi ke Singapore. Ok, kelihatannya normal, "ke Singapore buat jalan-jalan, _it's ok_, _nothing special about that_. Semua orang juga pernah jalan-jalan ke Singapore, ga ada apa-apanya deh". itu mungkin pikir kalian. _But no_, ini sedikit berbeda. Gue kesana sebenernya hanya untuk transit dari Malaysia ke Jakarta.
+<p class="intro">Sekitar 2 atau 3 minggu lalu gue melakukan hal yang bisa dibilang nekat, sesuatu yang spontan dan baru bagi gue. Gue pergi ke Singapore. Ok, kelihatannya normal, "ke Singapore buat jalan-jalan, _it's ok_, _nothing special about that_. Semua orang juga pernah jalan-jalan ke Singapore, ga ada apa-apanya deh". itu mungkin pikir kalian. _But no_, ini sedikit berbeda. Gue kesana sebenernya hanya untuk transit dari Malaysia ke Jakarta.</p>
 
 _Ok, hold on_, Malaysia - Jakarta, tapi transit ke Singapore? Ini kaya dari Bekasi mau ke Jakarta tapi muter dulu lewat Bogor kota (ini perumpaan gue _acceptable_ ga sih?). _So anyway_, kenapa gue ngelakuin ini? Gue awalnya memang berencana untuk kesana di akhir tahun 2017 atau tahun baru 2018, tapi karena beberapa alasan (read: ga ada duit coy) akhirnya gue gajadi kesana. 
 

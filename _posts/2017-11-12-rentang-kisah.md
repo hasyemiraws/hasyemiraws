@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rentang Kisah oleh Gita Savitri Devi"
+title:  "Review Buku Rentang Kisah oleh Gita Savitri Devi (Gitasav)"
 judul: "Rentang Kisah"
 penulis: "Gita Savitri Devi"
 cover: /assets/images/post/rentang-kisah.jpg
@@ -16,7 +16,7 @@ image: /assets/images/post/rentang-kisah/rentang-kisah-cover.jpg
 excerpt_separator: <!--more-->
 ---
 
-Rentang Kisah ini adalah buku debut pertama dari Gita Savitri Devi atau yang lebih di kenal dengan aliasnya di social media dengan nama: <a href="https://www.instagram.com/gitasav/" title="gitasav" target="_blank">___@gitasav___</a>. Di buku perdananya ini, konten yang ia tuliskan disini adalah kisah perjalanan pribadinya dari dan sampai ke Jerman. Kisah bagaimana proses perjalanan ini bisa mengubahnya.
+<p class="intro">Rentang Kisah ini adalah buku debut pertama dari Gita Savitri Devi atau yang lebih di kenal dengan aliasnya di social media dengan nama: <a href="https://www.instagram.com/gitasav/" title="gitasav" target="_blank">___@gitasav___</a>. Di buku perdananya ini, konten yang ia tuliskan disini adalah kisah perjalanan pribadinya dari dan sampai ke Jerman. Kisah bagaimana proses perjalanan ini bisa mengubahnya.</p>
 
 <figure>
   <img src="/assets/images/post/rentang-kisah/rentang-kisah-cover.jpg" alt="Rentang Kisah oleh Gitasav" title="Rentang Kisah oleh Gitasav" />

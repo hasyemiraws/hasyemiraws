@@ -1,6 +1,6 @@
 .container {	
 	&__header {
-		width: 90%;
+		width: 85%;
 		z-index: 4;
 		padding: 0;
 	}
@@ -37,7 +37,83 @@
         justify-content: space-between;        
         align-items: center;
         padding-top: 10px;
-        padding-bottom: 10px;                
+		padding-bottom: 10px;   
+		
+		&--right {
+			display: inline-flex;
+		}
+
+		&--lang {
+			height: 40px;
+			width: 45px;
+			position: relative;
+			text-transform: uppercase;
+
+			.menu-active & {				
+				display: none;
+			}
+		}
+
+		&--lang-label {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 40px;
+			font-family: $font-primary;
+			color: #101010cf;
+			cursor: pointer;
+
+		}
+
+		&--lang-list {
+			list-style-type: none;
+			display: block;
+			margin-bottom: 0;			
+			border-radius: 2px;						
+			position: absolute;						
+			width: 100%;
+			background: white;
+			transition: all ease 0.3s;			
+			overflow: hidden;
+			top: 0;
+			max-height: 80px;
+			height: auto;
+			visibility: hidden;
+			opacity: 0;
+			box-shadow: 0px 1px 5px rgba(0,0,0,0.1);									
+
+			&.show {				
+				visibility: visible;
+				opacity: 1;
+			}			
+
+			li {
+				margin-bottom: 0;
+				height: 40px;				
+				display: flex;
+				justify-content: center;
+				align-items: center;	
+				cursor: pointer;			
+
+				a {
+					font-family: $font-primary;
+					color: #101010cf;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;	
+
+					&:hover {
+						color: $black;
+					}
+				}
+
+				&.selected, 
+				&:hover {
+					background: #fbfbfb;
+				}
+			}
+		}
     }
 
     &__nav__logo {

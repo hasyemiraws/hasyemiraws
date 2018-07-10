@@ -6,6 +6,7 @@
 
 @import "utils/variables";
 @import "utils/mixin";
+@import "utils/util";
 
 @import "vendors/font-awesome";
 @import "vendors/normalize";
@@ -19,17 +20,20 @@
 @import "base/typography";
 @import "base/animation";
 
+@import "pages/home";
+@import "pages/about";
+
 @import "layouts/grid";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/article";
 @import "layouts/book";
 @import "layouts/menu-navigation";
+@import "layouts/playground";
+@import "layouts/podcast";
 
-// @import "components"
-
-@import "pages/home";
-@import "pages/about";
+@import "components/image";
+@import "components/link";
 
 @import "themes/clean-white";
 @import "themes/going-dark";

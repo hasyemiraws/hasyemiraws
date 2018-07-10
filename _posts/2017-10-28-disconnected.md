@@ -13,7 +13,7 @@ excerpt_separator: <!--more-->
 
 <h6>Listen to this post:</h6>
 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/350685796&amp;color=%23000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe><br/>
-Sebulan lalu gue tantang diri gue sendiri untuk melepaskan diri dari social media selama sebulan. I made it. (Well i cheated tho, once). So gimana rasanya? apa efeknya setelah sebulan? dan kenapa gue ngelakuin itu?
+<p class="intro">Sebulan lalu gue tantang diri gue sendiri untuk melepaskan diri dari social media selama sebulan. I made it. (Well i cheated tho, once). So gimana rasanya? apa efeknya setelah sebulan? dan kenapa gue ngelakuin itu?</p>
 
 Sebulan sebelumnya Iman Usman juga ngelakuin ini. Mungkin terus lo bakal mikir, "ah lo mah cuma ikut ikutan dia doang". Nggak. Sama sekali nggak ada pikiran kaya gitu. Gue sebenernya udah kepikiran lama untuk ngelakuin ini, tapi emang ga pernah ada keberanian dan komitmen untuk ngelakuin ini. Pernah sekali gue coba untuk nggak gunain hp selama sehari, tapi yang ada temen gue sendiri malah ngehujat ngatain kasian gara gara jomblo ga ada yang ngechat. Well, namanya juga netizen.
 

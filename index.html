@@ -1,23 +1,71 @@
 ---
 layout: default
-title: "Home - hasyemiraws"
+title: "Home"
 ---
 
-<section class="home--intro">    
+<section class="container home--intro">    
     <div class="home--hero-label">                  
       <span class="small-title">A Journal of a</span>
-      <h1>
-        High Functional Introvert                  
+      <h1 class="hero-title">
+        <span>
+            High Functional Introvert
+        </span>
       </h1>           
+      <span class="small-link-title">
+        <a href="/about/">
+          Who Am I?
+          <img src="{{ '/assets/images/right-arrow.svg'|theme }}"/>
+      </a>
+      </span>
     </div>    
 </section>
 
-<section class="home--section content--section">  
-    <div class="post__list post__list--grid">      
-       {% for post in paginator.posts %}            
-       <figure class="post__list--item">
-        <img data-object-fit class="post__list--image" src="{{ post.featured_image }}">
-          <figcaption class="post__list--text">                                                 
+<section class="container home--section content--section">      
+    <a href="/blog/">
+      <h1 class="home--section--title">
+        /Blog
+        <span>Latest Post</span>
+      </h1>    
+    </a>        
+    <div class="grid blog--grid home">
+      <div class="grid--item grid--twelve grid--six--lg grid--six--md">
+        {% for post in site.tags.featured limit:1 %}            
+          <figure class="post__list--item-featured">
+            <img data-object-fit class="post__list--image post__list--image-featured" src="{{ post.featured_image }}">
+              <figcaption class="post__list--text post__list--text-featured">                                                 
+                  {% if post.tags %}
+                    {% assign tags = post.tags %}
+                  {% else %}
+                    {% assign tags = page.tags %}
+                  {% endif %}
+                  {% for tag in tags %}
+                  <span class="post__list--category-label">
+                    <!-- <a href="/categories/#{{category|slugize}}"> -->
+                      {{tag}}
+                    <!-- </a> -->
+                  </span>
+                  {% unless forloop.last %}&nbsp;{% endunless %}
+                  {% endfor %}  
+    
+                  <a href="{{ post.url }}">
+                    <h3 class="post__list--title">                              
+                        {{ post.title }}                              
+                    </h3>
+                  </a>                  
+                  
+                  <span class="post__list--category-label">
+                    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                    {{ post.date | date: date_format }}
+                  </span>                  
+              </figcaption>                                                                 
+            </figure>                            
+        {% endfor %}
+      </div>
+      <div class="grid--item grid--twelve grid--six--lg grid--six--md">
+        {% for post in site.posts limit:5 %}            
+        <figure class="post__list--item-home">
+          <img data-object-fit class="post__list--image post__list--image-home" src="{{ post.featured_image }}">
+          <figcaption class="post__list--text post__list--text-home">                                                 
               {% if post.categories %}
                 {% assign categories = post.categories %}
               {% else %}
@@ -32,49 +80,105 @@ title: "Home - hasyemiraws"
               {% unless forloop.last %}&nbsp;{% endunless %}
               {% endfor %}  
 
-              <h3 class="post__list--title">                              
-                  {{ post.title }}                              
-              </h3>
+              <a href="{{ post.url }}">
+                <h3 class="post__list--title">                              
+                    {{ post.title }}                              
+                </h3>
+              </a>              
               
               <span class="post__list--category-label">
                 {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
                 {{ post.date | date: date_format }}
               </span>
+          </figcaption>                                                                                     
+        </figure>                            
+        {% endfor %}
+      </div>
+    </div>    
+        
+    <div class="home--section__bottom">             
+        <div class="home--section__link">
+            <a href="/blog/">More Stories <img src="{{ '/assets/images/right-arrow.svg'|theme }}"/></a>      
+        </div>       
+    </div>    
+</section>
 
-              <a href="{{ post.url }}">Read More</a>                      
-          </figcaption>                                                                 
-        </figure>                         
-      {% endfor %}
-    </div>        
+<section class="content--section bukubergilir--container" style="background-image: url('{{ '/assets/images/page/bukubergilir-bg.jpg'|theme }}');">
+  <div class="bukubergilir--section">            
+      <a href="/buku-bergilir/">
+        <h1 class="content--section--title text-center">
+          #BUKUBERGILIR
+        </h1>
+      </a>              
+  </div>  
+</section>
 
-    <!-- pagination -->
-    {% if paginator.total_pages > 1 %}
-    <div class="home--pagination"> 
-      {% if paginator.previous_page %}
-        <div class="home--pagination_prev-stories">
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class=" arrow arrow-left fa fa-angle-left"></i> Newer Stories</a>
+<section class="content--section playground--container container">
+  <div class="playground--section">                
+    <div class="grid">
+      <div class="grid--item grid--four--lg grid--four--md grid--twelve">
+        <div class="playground--intro">
+          <h1 class="content--section--title text-center">
+            /PLAYGROUND
+          </h1>
+          <p>
+            Collection of things that i do for fun or just to play around using code.
+          </p>
+          <div class="home--section__link playground--section__link">
+              <a href="https://codepen.io/hasyemiraws" target="_blank">Visit my Playground</a>      
+          </div>
         </div>        
-      {% else %}
-        <div class="home--pagination_prev-stroies">&nbsp;</div>        
-      {% endif %}
+      </div>
+      <div class="grid--item grid--eight--lg grid--eight--md grid--twelve">
+        <div class="playground--list">
+          <div class="grid m-b-0 playground--list__grid">
+            <div class="grid--item grid--four--lg grid--four--md grid--six">
+              <figure class="playground--item">
+                <a href="https://codepen.io/hasyemiraws/details/LQeLpz/" target="_blank">
+                  <img class="playground--thumb" src="{{ '/assets/images/playground/003.png'|theme }}" />                  
+                </a>
+              </figure>
+            </div>
+            <div class="grid--item grid--four--lg grid--four--md grid--six">
+                <figure class="playground--item">
+                  <a href="https://codepen.io/hasyemiraws/details/xXoNrr/" target="_blank">
+                    <img class="playground--thumb" src="{{ '/assets/images/playground/002.png'|theme }}" />                  
+                  </a>
+                </figure>
+            </div>
+            <div class="grid--item grid--four--lg grid--four--md grid--six">
+                <figure class="playground--item">
+                  <a href="https://codepen.io/hasyemiraws/details/WZOGPm/" target="_blank">
+                    <img class="playground--thumb" src="{{ '/assets/images/playground/001.png'|theme }}" />                  
+                  </a>
+                </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </div>  
+</section>
 
-      <!-- {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <span class="webjeda">{{ page }}</span>
-        {% elsif page == 1 %}
-          <a href="/">{{ page }}</a>
-        {% else %}
-          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-        {% endif %}
-      {% endfor %} -->
-      
-      {% if paginator.next_page %}        
-        <div class="home--pagination_next-stories">
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Stories <i class=" arrow arrow-right fa fa-angle-right"></i></a>      
-        </div> 
-      {% else %}       
-        <div class="home--pagination_next-stroies">&nbsp;</div>
-      {% endif %}
+<section class="content--section podcast--container">
+  <div class="podcast--section container">    
+    <div class="podcast--grid">      
+      <a href="#">
+        <h1 class="home--section--title podcast--section-title">
+          /Podcast        
+        </h1>    
+      </a>     
+      <img class="podcast--img-thumb img-bordered img-object-fit" src="{{ '/assets/images/podcast/wecantalk-002.jpg'|theme }}">      
+      <div class="podcast--text-section">
+        <span class="podcast--small-title">Latest Episode</span>
+        <h3 class="podcast--title"><a href="https://soundcloud.com/wecantalk/ep002" target="_blank">Minal Aidin Wal Faidin, Ngomongin Lebaran dan Pertanyaan "Kapan Nikah?" bareng @almuniry - Ep. 002</a></h3>
+        <p class="podcast--excerpt">
+            Minal Aidin Wal Faidin, Mohon Maaf Lahir Batin. Kali ini kita ngomongin seputar hal lebaran. Diantaranya menghadapi pertanyaan "Kapan Nikah".
+        </p>
+        <div class="home--section__link podcast--section__link">
+            <a href="https://soundcloud.com/wecantalk/" target="_blank">Browse all episode ...</a>      
+        </div>
+      </div>
     </div>
-    {% endif %}
+  </div>
 </section>

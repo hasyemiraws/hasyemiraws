@@ -2,17 +2,13 @@
 layout: default
 ---
 
-<div class="article--intro">        
-    <h1 class="article--intro-title animated fadeInUp">
-      {{ page.title | escape }}               
-    </h1>                               
-</div>
-
-<section class="category--section content--section">
-    <div class="article--featured-image">
-      <img data-object-fit src="{{ page.featured_image }}"/>
-    </div>
-
-    {{ content }}
-
+<section class="blog--cont" style="background-image: url('{{page.featured_image}}')">
+  <div class="container home--intro blog--intro">    
+    <div class="home--hero-label">                  
+      <h1 class="hero-title animated fadeInUp">{{ page.title | escape }}</h1>
+      <h5 class="hero-subtitle animated fadeInUp">{{ page.description }}</h5>
+    </div>     
+  </div>
 </section>
+
+{{ content }}

@@ -5,7 +5,7 @@ title: "Home - hasyemiraws"
 
 {% assign lang-posts=paginator.posts | where:"i18n-link", page.i18n-link | sort: 'lang' %}
 
-<section class="home--intro">    
+<section class="container home--intro">    
     <div class="home--hero-label">                  
       <span class="small-title">A Journal of a</span>
       <h1>
@@ -14,7 +14,7 @@ title: "Home - hasyemiraws"
     </div>    
 </section>
 
-<section class="home--section content--section">  
+<section class="container home--section content--section">  
     <div class="post__list post__list--grid">      
        {% for post in lang-posts limit:10 %}    
        <figure class="post__list--item">

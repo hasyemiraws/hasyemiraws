@@ -2,44 +2,37 @@
 layout: default
 ---
 
-<div class="article--intro">
-  {% if post.categories %}
-    {% assign categories = post.categories %}
-  {% else %}
-    {% assign categories = page.categories %}
-  {% endif %}
-  {% for category in categories %}
-  <span class="article--category-label animated fadeInUp">
-    <a href="/{{category|slugize}}">
-      {{category}}
-    </a>
-  </span>
-  {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}
-  <h1 class="article--intro-title animated fadeInUp">
-    {{ page.title | escape }}               
-  </h1>                         
-  <span class="article--category-label animated fadeInUp">
-    <time>
-      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-      {{ page.date | date: date_format }}
-    </time>          
-  </span>
-</div>
-
-<section class="post--section content--section">
-  <div class="article--featured-image">
-    <img data-object-fit src="{{ page.featured_image }}"/>
+<section class="article--hero" style="background-image: url('{{page.featured_image}}')">
+  <div class="container home--intro article--intro">    
+    <div class="home--hero-label">
+      {% if post.categories %}
+      {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+      <span class="article--category-label animated fadeInUp">
+        <a href="/{{category|slugize}}">
+          {{category}}
+        </a>
+      </span>
+      {% unless forloop.last %}&nbsp;{% endunless %}
+      {% endfor %}                  
+      <h1 class="article--intro-title animated fadeInUp">{{ page.title | escape }}</h1>
+      <span class="article--category-label animated fadeInUp">
+        <time>
+          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+          {{ page.date | date: date_format }}
+        </time>          
+      </span>
+    </div>     
   </div>
+</section>
 
+<section class="post--section content--section">  
   <div class="container container__post">
 
-    <article class="article--post">
-
-      <header class="article--post-header">
-        <!-- <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1> -->
-      </header>
-
+    <article class="article--post">      
       <div class="article--post-content">
         {{ content }}
       </div>
@@ -48,10 +41,11 @@ layout: default
         {% include disqus_comments.html %}
       {% endif %}
     </article>
+
     <section class="article__related">
       <h2 class="title-section">Related Post</h2>
       <div class="article__related--grid grid">
-        {% assign RELATED_POSTS_THRESHOLD = 3 %}      
+        {% assign RELATED_POSTS_THRESHOLD = 2 %}      
         {% assign related_post_count = 0 %}
         {% for post in site.related_posts %}
           {% if related_post_count == RELATED_POSTS_THRESHOLD %}
@@ -59,7 +53,7 @@ layout: default
           {% endif %}
           {% for cat in post.categories %}
             {% if page.categories contains cat %}
-              <figure class="article__related--item grid--item grid--twelve grid--four--md" data-test="{{ forloop.index }}">
+              <figure class="article__related--item grid--item grid--twelve grid--six--md">
                     <img data-object-fit class="article__related--image" src="{{ post.featured_image }}">                  
                     <figcaption class="article__related--text">                        
                           <h3 class="article__related--title">                              
@@ -104,7 +98,7 @@ layout: default
             {% endfor %}
             {% unless already_related %}
               {% assign posts_left = posts_left | minus: 1 %}
-              <figure class="article__related--item grid--item grid--twelve grid--four--md" data-test="{{ forloop.index }}">
+              <figure class="article__related--item grid--item grid--twelve grid--six--md">
                     <img data-object-fit class="article__related--image" src="{{ post.featured_image }}">                  
                     <figcaption class="article__related--text">                        
                           <h3 class="article__related--title">                              

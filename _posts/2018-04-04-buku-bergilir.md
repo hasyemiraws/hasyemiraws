@@ -15,7 +15,7 @@ excerpt_separator: <!--more-->
 
 ### Apa itu #BukuBergilir?
 
-<p class="normal-text">Buku Bergilir adalah salah satu program dan pilot project personal untuk memberikan buku yang sudah gue list atau bisa juga sesuai dengan permintaan, secara gratis tiap bulannya untuk beberapa orang atau partisipan yang terpilih.</p>
+Buku Bergilir adalah salah satu program dan pilot project personal untuk memberikan buku yang sudah gue list atau bisa juga sesuai dengan permintaan, secara gratis tiap bulannya untuk beberapa orang atau partisipan yang terpilih.
 
 Tapi, ini bukan **GIVEAWAY**, dimana gue tidak memberikan buku ini kepada orang terpilih tersebut lalu dia bisa simpan atau menjadi milik dia. Melainkan yang terpilih ini harus membacanya dan kemudian memberikannya atau meneruskannya ke orang lain setelah mereka selesai membacanya. Boleh kepada siapapun (pacar, teman, mantan, mantan gebetan, mantan gebetannya pacar, atau total strangers). Intinya buku ini tidak berhenti di orang tersebut. Sehingga membentuk rantai yang tidak pernah putus.
 

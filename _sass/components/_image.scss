@@ -1,0 +1,10 @@
+.img {  
+  &-bordered {    
+    border-radius: 5px;    
+  }
+
+  &-object-fit {    
+    object-fit: cover;
+    object-position: center;
+  }
+}

@@ -1,0 +1,80 @@
+.playground {
+    &--container {                         
+    }
+
+    &--section {  
+        padding: 100px 0;      
+    }
+
+    &--intro {
+        display: flex;
+        flex-direction: column;        
+        text-align: left;
+        padding-right: 40px;        
+
+        h1 {
+            text-align: left;
+            margin-bottom: 10px;
+            font-size: 45px;
+            z-index: 1;        
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 11px;
+        }
+    } 
+
+    &--item {
+        margin: 0;
+
+        &:hover {
+            
+            .playground--thumb {
+                box-shadow: 0 0px 15px rgba(0,0,0,0.3), 0 5px 10px rgba(0,0,0,0.22);
+            }
+        }
+    }
+
+    &--thumb {
+        max-width: 100%;
+        border-radius: 5px;        
+        transition: all 0.3s ease-in-out;
+    }
+
+    &--list {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        &__grid {
+            @include breakpoint(max_phablet) {
+                display: flex;
+                overflow: auto;                
+
+                &::-webkit-scrollbar {                    
+                    -webkit-appearance: none;
+                }
+
+                .grid--item:not(:last-child) {
+                    margin-right: 10px;
+                }
+
+                .playground--thumb {
+                    width: 65vw;
+                    max-width: none;
+                }
+            }
+
+            @include breakpoint(mobile) {
+                .playground--thumb {
+                    width: 75vw;                    
+                }
+            }
+        }
+    }
+
+    &--section__link {
+        margin-top: 10px;
+    }
+}

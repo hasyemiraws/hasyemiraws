@@ -12,7 +12,7 @@ featured_image: /assets/images/post/eco-park/cover.jpg
 excerpt_separator: <!--more-->
 ---
 
-Siapa yang sangka di tengah panas teriknya Kuala Lumpur ternyata masih ada beberapa area hijau yang bisa dinikmati. Salah satunya adalah KL Eco Forest Park, yang ternyata lokasinya tidak jauh dari pusat kota Kuala Lumpur.
+<p class="intro">Siapa yang sangka di tengah panas teriknya Kuala Lumpur ternyata masih ada beberapa area hijau yang bisa dinikmati. Salah satunya adalah KL Eco Forest Park, yang ternyata lokasinya tidak jauh dari pusat kota Kuala Lumpur.</p>
 
 Gue kesana dan baru tau tempat ini karena Uber merekomendasikan tempat ini sebagai salah satu <a href="https://www.uber.com/en-MY/blog/kuala-lumpur/hiddencitieskl/" target="_blank">Hidden Cities</a> di KL. Jadi sekalian juga bertemu dengan kawan, juga ingin _hunting-hunting_ dan lihat tempat ini akhirnya cuss berangkat kesana.
 

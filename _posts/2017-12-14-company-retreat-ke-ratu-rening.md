@@ -12,7 +12,7 @@ image: /assets/images/post/outing/cover.jpg
 excerpt_separator: <!--more-->
 ---
 
-Yeay, tiba saatnya menuju penghujung tahun, saatnya melepas beban, melepas stress dari semua pekerjaan, mari bersenang-senang! Kembali ke alam! _And we had so much fun together_! _Chill out_ di resort bernuansa alam, trekking ke air terjun dan water rafting!
+<p class="intro">Yeay, tiba saatnya menuju penghujung tahun, saatnya melepas beban, melepas stress dari semua pekerjaan, mari bersenang-senang! Kembali ke alam! _And we had so much fun together_! _Chill out_ di resort bernuansa alam, trekking ke air terjun dan water rafting!</p>
 
 {% if page.adsense %}
 <div class="ads">

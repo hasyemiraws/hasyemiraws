@@ -13,7 +13,7 @@ image: /assets/images/post/365-wonder/cover.jpg
 excerpt_separator: <!--more-->
 ---
 
-Untuk yang sudah baca buku Wonder sebelumnya, pasti akan mengenal dan juga penasaran sama buku satu ini. 365 Days of Wonder adalah salah satu buku dari koleksi seri Wonder dari R. J. Palacio. Beberapa buku lainnya adalah _The Julian Chapter_, _Pluto: A Wonder Story_, _Shingaling: A Wonder Story_ yang semua menjadi satu judul: _Auggie & Me_, lalu ada juga _We're All Wonders_.
+<p class="intro">Untuk yang sudah baca buku Wonder sebelumnya, pasti akan mengenal dan juga penasaran sama buku satu ini. 365 Days of Wonder adalah salah satu buku dari koleksi seri Wonder dari R. J. Palacio. Beberapa buku lainnya adalah <i>The Julian Chapter</i>, <i>Pluto: A Wonder Story</i>, <i>Shingaling: A Wonder Story</i> yang semua menjadi satu judul: <i>Auggie & Me</i>, lalu ada juga <i>We're All Wonders</i>.</p>
 
 {% if page.adsense %}
 <div class="ads">

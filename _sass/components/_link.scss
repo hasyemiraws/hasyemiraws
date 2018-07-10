@@ -1,0 +1,12 @@
+.link {
+  color: $black;
+  font-size: inherit;
+
+  &__dotted {
+    border-bottom: 1px dotted $black;
+  }
+
+  &:hover {
+    color: inherit;
+  }
+}

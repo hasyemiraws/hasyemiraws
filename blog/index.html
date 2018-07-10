@@ -1,0 +1,101 @@
+---
+layout: default
+title: "/Blog"
+description: "I WRITE WHAT MATTERS. Mostly write about DEV, book, and thought (or rant, of everything), or Maybe just a random stuff."
+featured_image: /assets/images/page/notes.jpg
+pagination: 
+  enabled: true  
+---
+
+<section class="blog--cont" style="background-image: url('{{page.featured_image}}')">
+  <div class="container home--intro blog--intro">    
+    <div class="home--hero-label">                  
+      <h1 class="hero-title">/Blog</h1>
+      <h5 class="hero-subtitle">{{ page.description }}</h5>
+    </div> 
+    <div class="blog--category-cont">      
+      <a href="/dev/" class="blog--category-link">
+        <span class="blog--category-title">DEV</span>
+      </a>
+      ·
+      <a href="/book/" class="blog--category-link">
+        <span class="blog--category-title">BOOK</span>
+      </a>
+      ·
+      <a href="/thoughts/" class="blog--category-link">
+        <span class="blog--category-title">THOUGHT</span>
+      </a>
+      ·
+      <a href="/travel/" class="blog--category-link">
+        <span class="blog--category-title">TRAVEL</span>
+      </a>
+    </div>   
+  </div>
+</section>
+
+<section class="container blog--section content--section">      
+    <div class="post__list grid blog--grid">      
+       {% for post in paginator.posts %}  
+       
+       {% if forloop.first %}
+          <figure class="post__list--item-blog grid--item grid--twelve first">       
+       {% else %}
+          <figure class="post__list--item-blog grid--item grid--twelve grid--six--md grid--four--lg column">
+       {% endif %}
+              
+        <img data-object-fit class="post__list--image post__list--image-blog" src="{{ post.featured_image }}">
+        <figcaption class="post__list--text post__list--text-blog">                                                 
+            {% if post.categories %}
+              {% assign categories = post.categories %}
+            {% else %}
+              {% assign categories = page.categories %}
+            {% endif %}
+            {% for category in categories %}
+            <span class="post__list--category-label">
+              <a href="/{{category}}/">
+                {{category}}
+              </a>
+            </span>
+            {% unless forloop.last %}&nbsp;{% endunless %}
+            {% endfor %}              
+
+            <a href="{{ post.url }}">
+              <h3 class="post__list--title">                              
+                  {{ post.title }}                              
+              </h3>
+            </a>          
+            
+            <p class="post__list--desc">
+              {{ post.description | truncate: 150 }}  
+            </p>
+            
+            <span class="post__list--category-label">
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              {{ post.date | date: date_format }}
+            </span>
+        </figcaption>                                                                         
+       </figure>       
+      {% endfor %}
+    </div>        
+
+    <!-- pagination -->
+    {% if paginator.total_pages > 1 %}
+    <div class="home--pagination"> 
+      {% if paginator.previous_page %}
+        <div class="home--pagination_prev-stories">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><i class=" arrow arrow-left fa fa-angle-left"></i> Newer Stories</a>
+        </div>        
+      {% else %}
+        <div class="home--pagination_prev-stroies">&nbsp;</div>        
+      {% endif %}      
+      
+      {% if paginator.next_page %}        
+        <div class="home--pagination_next-stories">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Stories <i class=" arrow arrow-right fa fa-angle-right"></i></a>      
+        </div> 
+      {% else %}       
+        <div class="home--pagination_next-stroies">&nbsp;</div>
+      {% endif %}
+    </div>
+    {% endif %}
+</section>

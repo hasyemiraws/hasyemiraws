@@ -12,7 +12,7 @@ image: /assets/images/post/tv.jpg
 excerpt_separator: <!--more-->
 ---
 
-Dedi Corbuzier belum lama ini mengeluarkan video tentang acara TV Indonesia dan artis-artis Indonesia yang ia sebut alay, penontonnya juga alay. Lalu di video selanjutnya, di depan KPI (Komisi Penyiaran Indonesia), juga dia mengkritik bilang kebanyakan acara tv nasional tidak mendidik. Apa iya?
+<p class="intro">Dedi Corbuzier belum lama ini mengeluarkan video tentang acara TV Indonesia dan artis-artis Indonesia yang ia sebut alay, penontonnya juga alay. Lalu di video selanjutnya, di depan KPI (Komisi Penyiaran Indonesia), juga dia mengkritik bilang kebanyakan acara tv nasional tidak mendidik. Apa iya?</p>
 
 {% if page.adsense %}
 <div class="ads">

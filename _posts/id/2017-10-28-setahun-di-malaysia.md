@@ -2,6 +2,7 @@
 layout: post
 title:  "Setahun di Malaysia"
 comments: true
+lang: id
 date:   2017-10-28 18:00:00 +0800
 categories: thoughts
 description: I survive first round. Barely survive. Gak terasa gue udah kerja di Malaysia selama setahun (lebih tepatnya sebenarnya 11 bulan, karena di bulan Desember gue di "pulangkan"). Di tulisan kali ini gue ingin cerita gimana akhirnya gue sampai disini dan perasaan gue hidup selama setahun.
@@ -14,7 +15,7 @@ excerpt_separator: <!--more-->
 <h6>Listen to this post:</h6>
 <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/350603449&amp;color=%23000000&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe><br/>
 ##### I survive first round. Barely survive.
-Gak terasa gue udah kerja dan menetap di Malaysia selama setahun (lebih tepatnya sebenarnya 11 bulan, karena di bulan Desember gue di "_pulangkan_"). Di tulisan kali ini gue ingin cerita gimana akhirnya gue sampai disini dan perasaan gue hidup selama setahun.
+<p class="intro">Gak terasa gue udah kerja dan menetap di Malaysia selama setahun (lebih tepatnya sebenarnya 11 bulan, karena di bulan Desember gue di "_pulangkan_"). Di tulisan kali ini gue ingin cerita gimana akhirnya gue sampai disini dan perasaan gue hidup selama setahun.</p>
 <!--more-->
 
 Jadi gue mendarat disini untuk pertama kalinya di tanggal 28 Oktober 2016, pengalaman pertama gue akhirnya keluar negeri. Seharusnya gue bisa berada di Malaysia sebelum itu, untuk kuliah, tapi karena satu dua masalah akhirnya gue memutuskan untuk stay di Indonesia. Untuk akhirnya sampai kesini, ada gabungan antara usaha, ridho dari yang maha kuasa dan mungkin sedikit keberuntungan sih. 

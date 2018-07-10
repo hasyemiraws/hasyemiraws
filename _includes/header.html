@@ -7,13 +7,25 @@
                         <div class="header__nav__logo">
                             <a href="/" class="logo"></a>
                         </div>
-                        <div class="header__nav__menu">
-                            <button class="header-hamburger hamburger hamburger--elastic" type="button">
-                              <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                              </span>
-                            </button>             
-                        </div>        
+                        <div class="header__nav--right">
+                            <div class="header__nav--lang">
+                                <span class="header__nav--lang-label">{{site.active_lang}}</span>
+                                <ul class="header__nav--lang-list" id="js__lang--list">
+                                    {% for lang in site.languages %}
+                                    <li class="{% if lang == site.active_lang %}selected{% endif %}">
+                                        <a href="{% if lang == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ lang }}{{page.url}} {% endif %}">{{ lang }}</a>
+                                    </li>
+                                    {% endfor %}                                    
+                                </ul>
+                            </div>
+                            <div class="header__nav__menu">
+                                <button class="header-hamburger hamburger hamburger--elastic" type="button">
+                                  <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                  </span>
+                                </button>             
+                            </div>        
+                        </div>                        
                     </nav>    
                 </div>
             </div>                    
@@ -23,12 +35,22 @@
     <nav class="menu__overlay animated">
         <div class="menu__overlay--container">     
             <ul class="menu__list-link">
-                <li><a href="/dev/">Dev</a></li>
-                <li><a href="/book/">Book</a></li>
-                <li><a href="/travel/">Travel</a></li>
-                <li><a href="/thoughts/">Thoughts</a></li>
-                <li><a href="/about/">About</a></li>
-            </ul>           
+                <li>
+                    <a href="#" data-attr-menu="toggle" title="Blog">Blog</a>
+                    <ul class="menu__list-link" data-attr-menu="dropdown_menu">                        
+                        <li><a href="#" data-attr-menu="back" title="Back to main">&lt; Back</a></li>                        
+                        <li><a href="/dev/" title="Dev">Dev</a></li>
+                        <li><a href="/book/" title="Book">Book</a></li>
+                        <li><a href="/travel/" title="Travel">Travel</a></li>
+                        <li><a href="/thoughts/" title="Thoughts">Thoughts</a></li>             
+                        <li><a href="/blog/" title="Blog">Browse All</a></li>                                   
+                    </ul>
+                </li>
+                <li><a href="#" title="Coming Soon">Portofolio</a></li>
+                <li><a href="#" title="Coming Soon">Resources</a></li>
+                <li><a href="#" title="Coming Soon">Playground</a></li>                    
+                <li><a href="/about/" title="About">About</a></li>
+            </ul>
         </div>
     </nav>
 </header>    
