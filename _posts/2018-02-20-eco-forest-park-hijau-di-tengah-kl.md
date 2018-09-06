@@ -9,6 +9,7 @@ categories: travel
 description: Main ke tengah hijau hutan tengah kota di tengah teriknya Kuala Lumpur
 author: Hasyemi Rafsanjani Asyari
 featured_image: /assets/images/post/eco-park/cover.jpg
+image: /assets/images/post/eco-park/cover.jpg
 excerpt_separator: <!--more-->
 ---
 

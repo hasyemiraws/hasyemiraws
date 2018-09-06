@@ -98,4 +98,14 @@
     text-transform: none;
     font-size: 12px;
   }
+
+  &--embed {    
+    width: 100%;
+    box-shadow: 0 20px 55px rgba(0,0,0,0.3), 0 10px 15px rgba(0,0,0,0.22);    
+    border-radius: 3px;
+
+    @include breakpoint(max_desktop) {
+      height: 102px;
+    }
+  }
 }

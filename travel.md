@@ -21,7 +21,7 @@ pagination:
           <figure class="post__list--item-blog grid--item grid--twelve grid--six--md grid--four--lg column">
        {% endif %}
               
-        <img data-object-fit class="post__list--image post__list--image-blog" src="{{ post.featured_image }}">
+        <a href="{{ post.url }}"><img data-object-fit class="post__list--image post__list--image-blog" src="{{ post.featured_image }}"></a>
         <figcaption class="post__list--text post__list--text-blog">                                                 
             {% if post.categories %}
               {% assign categories = post.categories %}

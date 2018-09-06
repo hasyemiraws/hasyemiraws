@@ -17,7 +17,7 @@
 title: hasyemiraws
 email: hi@hasyemiraws.com
 description:
-  High Functional Introvert. Full Time Learner. Part time stalker. Front end enthusiast.
+  High Functional Introvert. Full Time Learner. Part time stalker.
 baseurl: "" # the subpath of your site, e.g. /blog
 base: "https://hasyemiraws.com" 
 url: "https://hasyemiraws.com" # the base hostname & protocol for your site, e.g. http://example.com

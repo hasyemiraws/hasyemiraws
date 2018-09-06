@@ -133,19 +133,19 @@
 		}
 
 		> a {
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			opacity: 0;
+			display: block;					
 		}
 	}
 
 	&--item-blog {
+		> a {
+			flex: 1;
+		}
+
 		&.first {
 			img, figcaption {
 				flex: 1;
+				width: 100%;
 			}
 		}
 
@@ -224,6 +224,7 @@
 		padding-right: 20px;
 	    padding-bottom: 10px;
 		position: absolute;
+		flex: 1;
 		
 		&-featured {			
 			background: white;
@@ -240,12 +241,13 @@
 		&-blog {
 			position: relative;
 			background: none;
-			text-align: left;
+			text-align: left;			
 		}
 
 		.column &-blog {
 			padding: 0;
 			margin-top: 15px;
+			justify-content: flex-start;
 		}
 		
 		a {
@@ -290,8 +292,42 @@
 		color: white;
 		filter: grayscale(55%);
 		text-shadow: 0 0px 15px rgba(0,0,0,0.3), 0 5px 10px rgba(0,0,0,0.22);
+
+		&.bukubergilir {
+			background-position: 200% top;
+			background-size: 75%;
+			background-attachment: fixed;
+			text-shadow: none;
+
+			@include breakpoint(max_desktop) {
+				background-position: 300% top;
+				background-size: 85%;
+			}
+
+			@include breakpoint(max_tablet) {
+				background-position: 350px top;
+				background-size: 115%;
+			}
+
+			@include breakpoint(max_phablet) {
+				background-position: top;
+				background-size: 250%;
+				text-shadow: 0 0px 15px rgba(0,0,0,0.3), 0 5px 10px rgba(0,0,0,0.22);
+
+				&:before {
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					content: '';
+					background: linear-gradient(to bottom, rgba(189, 171, 171, 0.55) 0%, rgba(16, 16, 16, 0.8) 70%);
+				}
+			}
+		}		
 		
-		&:before {
+		&:not(.bukubergilir):before {
 			display: block;
 			position: absolute;
 			top: 0;
@@ -310,6 +346,10 @@
 		padding-bottom: 50px;
 		height: 100%;
 		text-align: center;
+
+		.bukubergilir & {
+			justify-content: center;			
+		}
     }
 
     &--category-label {
@@ -605,6 +645,7 @@
 	.article {
 		&--post {
 			padding: 0;
+			padding-top: 20px;
 
 			&--content {
 				font-size: 16px;
@@ -639,4 +680,20 @@
 			grid-template-columns: 1fr;
 		}
 	}	
+}
+
+.embed-responsive {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+
+ 	iframe, object, embed {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
 }

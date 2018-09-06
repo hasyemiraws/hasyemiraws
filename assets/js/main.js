@@ -80,6 +80,10 @@ function runAllScript() {
 			}
 		}
 	});
+
+	// Hook doAnimations on scroll, and trigger a scroll
+	$(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
 }
 
 var initDisqus = function() {
@@ -140,6 +144,8 @@ $(function() {
 	});	
 
 	$(document).on('click', "[data-attr-menu='toggle']", function(event) {
+		event.preventDefault();
+
 		$parent = $(this).parent();
 		$submenu = $parent.children("ul");
 
@@ -149,6 +155,7 @@ $(function() {
 	});
 
 	$(document).on('click', "[data-attr-menu='back']", function(event) {
+		event.preventDefault();
 		$parent = $(this).closest("ul");		
 
 		if ($parent.hasClass("show")) {
@@ -204,11 +211,33 @@ $(function() {
 
 			$(this).closest("#js__lang--list").toggleClass("show");
 		}
-	});	
+	});  
 	
 	runAllScript();	
 	initDisqus();			  	
 });
+
+	// Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function() {
+    
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Unbind scroll handler if we have no animatables
+    if ($animatables.length == 0) {
+      $(window).off('scroll', doAnimations);
+    }
+    
+    // Check all animatables and animate them if necessary
+		$animatables.each(function(i) {
+       var $animatable = $(this);
+			if (($animatable.offset().top + $animatable.height()) < offset) {
+        $animatable.removeClass('animatable').addClass('animated');
+			}
+    });
+
+	};
 
 document.addEventListener("DOMContentLoaded", function() {
 	var lastElementClicked;

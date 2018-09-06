@@ -7,10 +7,11 @@ adsense: true
 comments: true
 categories: ['book']
 permalink: /:categories/:title/
-date:   2018-02-05 00:00:00 +0800
+date: 2018-02-05 00:00:00 +0800
 description: Buku ini untuk mereka yang merasa di tinggalkan, merasa terbuang, mereka yang menginginkan kesempatan kedua, mereka yang mendendam dan mereka yang perlu memaafkan. Untuk orang tua dan untuk anak yang saling mencintai, tapi sulit untuk mengungkapkan. Untuk sahabat, untuk diri kita sendiri mempersiapkan dan memperkuat bekal kita.
 author: Hasyemi Rafsanjani Asyari
 featured_image: /assets/images/post/anak-rantau/cover.jpeg
+image: /assets/images/post/anak-rantau/cover.jpeg
 excerpt_separator: <!--more-->
 ---
 

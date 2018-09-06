@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: "journal of a high functional introvert."
 ---
 
 <section class="container home--intro">    
@@ -31,7 +31,7 @@ title: "Home"
       <div class="grid--item grid--twelve grid--six--lg grid--six--md">
         {% for post in site.tags.featured limit:1 %}            
           <figure class="post__list--item-featured">
-            <img data-object-fit class="post__list--image post__list--image-featured" src="{{ post.featured_image }}">
+              <a href="{{ post.url }}"><img data-object-fit class="post__list--image post__list--image-featured" src="{{ post.featured_image }}"></a>
               <figcaption class="post__list--text post__list--text-featured">                                                 
                   {% if post.tags %}
                     {% assign tags = post.tags %}
@@ -40,9 +40,9 @@ title: "Home"
                   {% endif %}
                   {% for tag in tags %}
                   <span class="post__list--category-label">
-                    <!-- <a href="/categories/#{{category|slugize}}"> -->
+                      <a href="/{{category|slugize}}">
                       {{tag}}
-                    <!-- </a> -->
+                    </a>
                   </span>
                   {% unless forloop.last %}&nbsp;{% endunless %}
                   {% endfor %}  
@@ -64,7 +64,7 @@ title: "Home"
       <div class="grid--item grid--twelve grid--six--lg grid--six--md">
         {% for post in site.posts limit:5 %}            
         <figure class="post__list--item-home">
-          <img data-object-fit class="post__list--image post__list--image-home" src="{{ post.featured_image }}">
+          <a href="{{ post.url }}"><img data-object-fit class="post__list--image post__list--image-home" src="{{ post.featured_image }}"></a>
           <figcaption class="post__list--text post__list--text-home">                                                 
               {% if post.categories %}
                 {% assign categories = post.categories %}
@@ -73,9 +73,9 @@ title: "Home"
               {% endif %}
               {% for category in categories %}
               <span class="post__list--category-label">
-                <!-- <a href="/categories/#{{category|slugize}}"> -->
+                  <a href="/{{category|slugize}}">
                   {{category}}
-                <!-- </a> -->
+                  </a>
               </span>
               {% unless forloop.last %}&nbsp;{% endunless %}
               {% endfor %}  
@@ -168,17 +168,7 @@ title: "Home"
           /Podcast        
         </h1>    
       </a>     
-      <img class="podcast--img-thumb img-bordered img-object-fit" src="{{ '/assets/images/podcast/wecantalk-002.jpg'|theme }}">      
-      <div class="podcast--text-section">
-        <span class="podcast--small-title">Latest Episode</span>
-        <h3 class="podcast--title"><a href="https://soundcloud.com/wecantalk/ep002" target="_blank">Minal Aidin Wal Faidin, Ngomongin Lebaran dan Pertanyaan "Kapan Nikah?" bareng @almuniry - Ep. 002</a></h3>
-        <p class="podcast--excerpt">
-            Minal Aidin Wal Faidin, Mohon Maaf Lahir Batin. Kali ini kita ngomongin seputar hal lebaran. Diantaranya menghadapi pertanyaan "Kapan Nikah".
-        </p>
-        <div class="home--section__link podcast--section__link">
-            <a href="https://soundcloud.com/wecantalk/" target="_blank">Browse all episode ...</a>      
-        </div>
-      </div>
+      <iframe class="podcast--embed" src="https://anchor.fm/suaranetizen/embed" height="150px" width="400px" frameborder="0" scrolling="no"></iframe>  
     </div>
   </div>
 </section>

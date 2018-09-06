@@ -2,11 +2,42 @@
     text-align: center;
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-bold {
+    font-weight: 800;
+}
+
 .m-b-0 {
     margin-bottom: 0 !important;
+}
+
+.m-t-20 {
+    margin-top: 20px !important;
+}
+
+.m-l--30 {
+    margin-left: -30px !important
+}
+
+.m-tb-40 {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
 }
 
 .center-block {
     display: flex; 
     justify-content: center
+}
+
+.mid_center-block {
+    display: flex; 
+    align-items: center;
+}
+
+.sticky-block {
+    position: sticky;
+    top: 30px;
 }

@@ -3,6 +3,10 @@
 		height: 90%;        
 		display: flex;     
 		width: 85%;   
+
+		@include breakpoint('mobile') {
+			padding: 0;
+		}
   }    
 
 	&--hero-label {		                 
@@ -12,6 +16,20 @@
 		justify-content: center;            
 		position: relative;
 		min-width: auto;
+
+		.bukubergilir & {
+			justify-content: flex-start;
+			align-items: flex-start;
+			max-width: 500px;
+			text-align: left;
+			color: black;
+
+			@include breakpoint("max_phablet") {
+				color: white;
+				text-align: center;
+			}
+
+		}
 
 		@include breakpoint("phablet") {
 			min-width: 320px;
@@ -107,6 +125,10 @@
 			margin-top: 0;
 		}
 
+		@include breakpoint('mobile') {
+			padding: 0;
+		}
+
 		&--title {
 			font-size: 55px;
 			z-index: 2;
@@ -129,8 +151,8 @@
 
 			@include breakpoint('tablet') {
 				position: absolute;
-				top: -75px;
-				font-size: 90px;
+				top: -60px;
+				font-size: 72px;
 				left: -15px;
 			}
 		}

@@ -4,6 +4,9 @@
     @if $point == desktop {
       @media (min-width: $lg) { @content ; }
    }
+   @else if $point == max_desktop {
+    @media (max-width: $lg) { @content ; }
+  }
    @else if $point == desktop_hd {
     @media (min-width: $xlg) { @content ; }
     }

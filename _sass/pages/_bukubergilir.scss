@@ -1,0 +1,32 @@
+.bukubergilir {
+  &-why-ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    li {
+      counter-increment: my-awesome-counter;
+      display: flex;      
+      font-size: 16px;   
+      
+      &:before {
+        content: "0" counter(my-awesome-counter);
+        font-weight: bold;
+        font-size: 3.2rem;
+        margin-right: 1rem;        
+        line-height: 1;        
+      }
+    }
+  }
+
+  &-why-cont {
+    padding: 60px 100px;
+
+    @include breakpoint(max_phablet) {
+      padding: 40px 20px;
+    }
+  }
+}
